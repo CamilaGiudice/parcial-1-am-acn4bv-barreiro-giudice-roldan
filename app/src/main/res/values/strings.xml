@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">parcial-1-am-acn4bv-barreiro-giudice-roldan</string>
+
+
+    //botones
+    <string name="btn_limon">Limón</string>
+    <string name="btn_maiz">Maiz</string>
+    <string name="btn_uva">Uva</string>
+    <string name="btn_trigo">Trigo</string>
+    <string name="btn_login">Login</string>
+
+    //labels
+    <string name="txt_home">Selecciona un cultivo</string>
+    <string name="emailtxt">Email</string>
+    <string name="passtxt">Contraseña</string>
+
+    //imagenes
+    <string name="descripcion_logo">Logo de Agro Appi</string>
+    <string name="iconologin">Icono de login</string>
+
+    //Modals
+    <string name="infoLimon">"Acá va la info del limon(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoMaiz">"Acá va la info del maiz(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoUva">"Acá va la info de la uva(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoTrigo">"Acá va la info del trigo(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+
+</resources>
