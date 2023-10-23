@@ -59,7 +59,43 @@
         además de ser utilizado en la actualidad como forraje para la ganadería.
 
     </string>
-    <string name="infoUva">"Acá va la info de la uva(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoUva">
+        Descripción Vid y Uva de Mesa:
+    Planta vivaz y trepadora de la familia de las vitáceas, con tronco retorcido, vástagos muy largos,
+        flexibles y nudosos, cuyo fruto es la uva.
+        La vid es una planta leñosa trepadora; una liana que bajo su forma cultivada presenta una estructura
+        permanente de madera vieja formando un esqueleto de soporte más o menos regular.
+        Además, las cepas, presentan órganos que brotan anualmente, primero herbáceos (pámpanos)
+        y luego madurados a leñosos (sarmientos).
+
+        La uva de mesa es esa golosina natural que podemos encontrar en el mercado para su consumo
+        fresco hasta el mes de mayo. Esta fruta dulce y ovalada posee propiedades nutricionales destacables:
+        contiene vitamina C y minerales como potasio, hierro, calcio y fósforo.
+        En Argentina, la temporada de cultivo abarca desde la floración en el mes de octubre hasta el
+        cultivo durante el mes de febrero.
+    La uva es el fruto de la vid o parra, cuyo nombre científico es Vitis vinifera,
+        una planta semileñosa y/o trepadora que cuando se deja crecer libremente puede alcanzar
+        más de 30 m pero que, al podarla anualmente, queda reducida a un pequeño arbusto de 1 m.
+        Esta fruta no solo es comestible sino que sirve como materia prima para la fabricación
+        de vino y otros productos derivados.
+    El Servicio Nacional de Sanidad y Calidad Agroalimentaria (Senasa)
+        recomienda la ingesta de esta pequeña fruta de la producción nacional
+        –cuyo cultivo controla en cuanto a sanidad, inocuidad y calidad–.
+        Las normas elaboradas por el organismo sobre buenas prácticas agrícolas e
+        higiene para frutas y hortalizas favorecen que este producto inocuo –cultivado en forma segura,
+        cuidando el ambiente y la salud de los trabajadores– llegue a personas consumidoras alrededor del mundo.
+    Regiones
+La superficie de vid de la República Argentina registrada es de más de 200.000 ha.
+        y su producción anual de la fruta sobrepasa las 2.400.000 toneladas.
+        Hay 18 provincias argentinas que registran superficie cultivada de vid:
+        las principales productoras son Mendoza (más de 1.500.000 toneladas anuales),
+        San Juan (más de 500.000 toneladas anuales), La Rioja (más de 80.000 toneladas anuales),
+        que junto a Salta, Catamarca, Neuquén y Río Negro, concentran aproximadamente el 99% de la superficie de vid del país;
+        el restante 1% se distribuye en 11 provincias:
+        La Pampa, Córdoba, Buenos Aires, Tucumán, San Luis, Chubut, Entre Ríos, Jujuy, Misiones,
+        Santiago del Estero y Santa Fe
+
+    </string>
     <string name="infoTrigo">
         Descripción Trigo:
     El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto.
