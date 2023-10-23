@@ -24,6 +24,8 @@ public class UsuarioActivity extends MainActivity{
         this.nombreUsuario=nombreUsuario;
         this.mailUsuario=mailUsuario;
         this.passwordUsuario=passwordUsuario;
+        misCultivos=new ArrayList<>();
+        misEnfermedades=new ArrayList<>();
     }
 
 
