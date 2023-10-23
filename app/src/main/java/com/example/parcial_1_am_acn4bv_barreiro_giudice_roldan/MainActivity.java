@@ -13,6 +13,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Atributos
     private int idUsuarios;
     private int idCultivos;
     private int idEnfermedades;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     private UsuarioActivity logueado;
 
+
+    //Constructor
     public MainActivity(){
 
         usuarios = new ArrayList<>();
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         idEnfermedades=1;
 
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,16 +120,23 @@ public class MainActivity extends AppCompatActivity {
     //Login
     public void login(){}
 
+
+
     //Cerrar Sesion
 
     public void cerrarSesion(){}
 
+
+
     //Logueado
+
+
 
     //Obtener Listas Clon
     List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
     List<CultivoActivity> cultivosClon = new ArrayList<>(cultivos);
     List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
+
 
     //ABM Usuario
 
@@ -140,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
         for (UsuarioActivity usu : usuarios) {
             if(usu.getIdUsuario() == id){
 
+                usu.setIdUsuario(id);
                 usu.setNombreUsuario(nom);//CONSULTAR SI ESTÁ BIEN
                 usu.setMailUsuario(mail);
                 usu.setPasswordUsuario(pass);
@@ -151,19 +163,21 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-    public void EliminarUsuarios(int id){
+    public boolean EliminarUsuarios(int id){
 
-        UsuarioActivity usuPorEliminar = null;
         for (UsuarioActivity usu : usuarios){
             if (usu.getIdUsuario()==id){
-                usuPorEliminar=usu;
-                break;
+
+                usuarios.remove(usu);
+                idUsuarios--;
+                return true;
+
             }
         }
-        if (usuPorEliminar!=null){
-            usuarios.remove(usuPorEliminar);
-        }
+       return false;
     }
+
+
 
     //ABM Cultivo
     public boolean agregarCultivos(String nombre, String descripcion){
@@ -171,8 +185,37 @@ public class MainActivity extends AppCompatActivity {
         idCultivos++;
         return true;
     }
-    public void modificarCultivos(){}
-    public void eliminarCultivos(){}
+    public boolean modificarCultivos(int id, String nombre, String descripcion){
+
+
+        for (CultivoActivity cul : cultivos){
+            if (cul.getIdCultivo() == id){
+
+                cul.setIdCultivo(id);
+                cul.setNombreCultivo(nombre);
+                cul.setDescripcionCultivo(descripcion);
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+    public boolean eliminarCultivos(int id){
+
+        for (CultivoActivity cul : cultivos){
+
+            if (cul.getIdCultivo()==id) {
+
+                cultivos.remove(cul);
+                idCultivos--;
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
     //ABM Enfermedad
     public boolean agregarEnfermedades(String nombre, String descripcion, String solBio, String solQuim){
@@ -180,8 +223,31 @@ public class MainActivity extends AppCompatActivity {
         idEnfermedades++;
         return true;
     }
-    public void modificarEnfermedades(){}
-    public void eliminarEnfermedades(){}
+    public boolean modificarEnfermedades(int id, String nombre, String descripcion, String solBio, String solQuim){
+
+        for (EnfermedadActivity enf : enfermedades){
+            if (enf.getIdEnfermedad()==id){
+
+                enf.setIdEnfermedad(id);
+                enf.setNombreEnfermedad(nombre);
+                enf.setDescripcionEnfermedad(descripcion);
+                enf.setSolucionBiologica(solBio);
+                enf.setSolucionQuimica(solQuim);
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean eliminarEnfermedades(int id){
+        for (EnfermedadActivity enf : enfermedades){
+            if (enf.getIdEnfermedad()==id){
+                enfermedades.remove(enf);
+                idEnfermedades--;
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 }
