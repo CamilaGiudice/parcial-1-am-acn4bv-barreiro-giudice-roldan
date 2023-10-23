@@ -60,6 +60,43 @@
 
     </string>
     <string name="infoUva">"Acá va la info de la uva(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
-    <string name="infoTrigo">"Acá va la info del trigo(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoTrigo">
+        Descripción Trigo:
+    El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto.
+        Su altura es variable, va desde treinta centímetros hasta un metro y medio de largo.
+        El tallo, recto, cilíndrico, da unas hojas largas y finas que terminan en forma de lanza,
+        por lo que se les llama lanceoladas.
+    El  trigo  se  desarrolla  en  climas  subtropicales,  templados  o  ligeramente  fríos.
+        Las  plantas  requieren  una cantidad  moderada  de  agua,  entre  229  y  762  milímetros  de  lluvia.
+        Los  trigos  de  invierno  se  cultivan  en zonas templadas. La temperatura mínima para que crezca bien
+        es de 13ºC. El mejor trigo se consigue en terrenos pesados, con abundante marga y arcilla,
+        aunque tambiénes posible obtener buenos rendimientos en otros más ligeros.
+
+Desde  el  inicio  de  la  civilización,  el  trigo  es  uno  de  los  cereales  más  importantes
+        en  la  alimentación humana. En general no se consume directamente; se usa en la elaboración de alimentos,
+        sobre todo en la industria  de  la  panificación,  así  como  en  la  fabricación  de  pastas,  galletas,
+        bebidas  y  hasta  en  la producción de  combustibles.
+Existen cinco variedades de  trigo. Cuatro de  ellas pueden  utilizarse  para  la elaboración de pan;
+        el quinto es del tipo cristalino, más utilizado para las pastas.
+
+Cómo reconocer el trigo
+El grano de trigo es ovalado, parecido al arroz, con las puntas redondeadas. De una
+de ellas sobresale el germen y en la otra hay un mechón de pelos finos qu
+e se conoce como pincel, por su forma. Los  granos pueden ser blandos o duros.
+        Estos granos se  muelen para  la  obtención de  harina  para pan.
+
+Del campo a la mesa
+La  siembra  del  trigo  requiere  distintas  cantidades  de  semilla  por  superficie,
+        según  la  variedad  de  la  que estemos hablando. Cuando se siembra al voleo, es decir,
+        arrojando la semilla al aire, se emplean de 150 a 180 kilos por hectárea. Si la siembra
+        se realiza en líneas, se utiliza menos cantidad, entre 120 y 125 kilos.
+        Si se  trata de trigo para  forraje, se necesitará  más semilla.
+La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya perdieron
+        su color verde y el grano tiene suficiente consistencia. El tallo se corta
+        a  unos  treinta  centímetros  del  suelo  por  medio  de  una  máquina  cosechadora.
+        De  ahí  el  trigo  se procesa industrialmente para convertirlo en harina y llegar a tu mesa,
+        en forma de pasteles, tortillas o sopa de pasta.
+
+    </string>
 
 </resources>
