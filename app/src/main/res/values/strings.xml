@@ -36,7 +36,29 @@
         Forma oblonga a elíptico-ovada, miden entre 6 a 12.5 cm de longitud y 3 a 6 cm de ancho;
         con margen aserrado-dentado.
 "</string>
-    <string name="infoMaiz">"Acá va la info del maiz(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoMaiz">
+      Descripción Maíz :
+
+    El maíz, pertenece a la familia de las Poáceas o Gramíneas y es uno de los granos alimenticios más antiguos
+        que se conocen, es una planta domesticada y altamente productiva que no crece en forma salvaje
+        por lo que es completamente dependiente de los cuidados del hombre.
+    Al igual que muchas plantas, tiene una parte femenina y otra masculina que trabajan en conjunto
+        para reproducirse. La parte masculina se llama borla o rastrojo, la puedes encontrar
+        al final del tallo y se compone de pequeñas flores que producen polen.
+    Su origen se dio en la región central de México a través de la fusión de plantas que crecían
+        en forma silvestre como el teocintle o teosinte.
+    Se considera que el maíz fue cultivado hace aproximadamente 10 mil años a.C.
+        la evidencia más antigua que se tiene, es de hace 6,250 años, evidencia encontrada
+        en la cueva de Guila Naquitz, en Oaxaca, a unos kilómetros de Mitla.
+    El nombre científico de este grano es Zea Mays, los nahuas de Mesoamérica lo llamaban Centli y
+        durante su propagación por el continente americano adquirió nombres como choclo, jojoto, corn,
+        milho o elote y maíz con la llegada de los españoles a través de la adaptación fonética de mahís.
+    También se cree que en México se concentra el mayor número de variedad de maíz; blanco,
+        azul, gordo, dulce, chiquito, bofo, vendeño, conejo, dulcillo del Noroeste, chapalote y amarillo,
+        son sólo algunas de las más de 60 variedades de maíces que forman parte de nuestra alimentación diaria,
+        además de ser utilizado en la actualidad como forraje para la ganadería.
+
+    </string>
     <string name="infoUva">"Acá va la info de la uva(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
     <string name="infoTrigo">"Acá va la info del trigo(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
 
