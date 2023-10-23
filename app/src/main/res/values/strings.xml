@@ -20,7 +20,22 @@
     <string name="iconologin">Icono de login</string>
 
     //Modals
-    <string name="infoLimon">"Acá va la info del limon(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoLimon">
+        Descripción Limón:
+    El limón es el fruto en baya del limonero, árbol de hoja perenne y espinoso de la familia de las rutáceas.
+        Este árbol se desarrolla con éxito en los climas templados y tropicales, cultivándose actualmente en todo el mundo.
+        El limonero, originario de China o India, se cultiva en Asia desde hace más de 2.500 años
+        Tiene numerosas ramas con espinas duras y gruesas. Hojas unifoliadas de color verde pálido, de oblongas a
+        elíptico-ovadas y con el margen serrado-dentado.
+        Flores solitarias o con racimos de pétalos blancos en la parte superior y púrpuras en la parte inferior.
+        Es inconfundible cuando el fruto está maduro.
+
+       Nombre Técnico:
+    Limón (Citrus limon) Citrus, del griego kitros,
+        con el que se designaba a algunos cítricos; limón, de su nombre popular.
+        Forma oblonga a elíptico-ovada, miden entre 6 a 12.5 cm de longitud y 3 a 6 cm de ancho;
+        con margen aserrado-dentado.
+"</string>
     <string name="infoMaiz">"Acá va la info del maiz(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
     <string name="infoUva">"Acá va la info de la uva(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
     <string name="infoTrigo">"Acá va la info del trigo(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
