@@ -134,8 +134,36 @@ public class MainActivity extends AppCompatActivity {
         idUsuarios++;
         return true;
     }
-    public void modificarUsuarios(){}
-    public void EliminarUsuarios(){}
+    public boolean modificarUsuarios(int id, String nom, String mail
+            , String pass, boolean esAdmin){
+
+        for (UsuarioActivity usu : usuarios) {
+            if(usu.getIdUsuario() == id){
+
+                usu.setNombreUsuario(nom);//CONSULTAR SI ESTÁ BIEN
+                usu.setMailUsuario(mail);
+                usu.setPasswordUsuario(pass);
+                usu.setEsAdmin(esAdmin);
+                return true;
+
+            }
+
+        }
+        return false;
+    }
+    public void EliminarUsuarios(int id){
+
+        UsuarioActivity usuPorEliminar = null;
+        for (UsuarioActivity usu : usuarios){
+            if (usu.getIdUsuario()==id){
+                usuPorEliminar=usu;
+                break;
+            }
+        }
+        if (usuPorEliminar!=null){
+            usuarios.remove(usuPorEliminar);
+        }
+    }
 
     //ABM Cultivo
     public boolean agregarCultivos(String nombre, String descripcion){
