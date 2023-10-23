@@ -20,9 +20,119 @@
     <string name="iconologin">Icono de login</string>
 
     //Modals
-    <string name="infoLimon">"Acá va la info del limon(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
-    <string name="infoMaiz">"Acá va la info del maiz(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
-    <string name="infoUva">"Acá va la info de la uva(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
-    <string name="infoTrigo">"Acá va la info del trigo(Intro del cultivo, nombre técnico, Listado de enfermedades, Solucion biológica, Solución Química)"</string>
+    <string name="infoLimon">
+        Descripción Limón:
+    El limón es el fruto en baya del limonero, árbol de hoja perenne y espinoso de la familia de las rutáceas.
+        Este árbol se desarrolla con éxito en los climas templados y tropicales, cultivándose actualmente en todo el mundo.
+        El limonero, originario de China o India, se cultiva en Asia desde hace más de 2.500 años
+        Tiene numerosas ramas con espinas duras y gruesas. Hojas unifoliadas de color verde pálido, de oblongas a
+        elíptico-ovadas y con el margen serrado-dentado.
+        Flores solitarias o con racimos de pétalos blancos en la parte superior y púrpuras en la parte inferior.
+        Es inconfundible cuando el fruto está maduro.
+
+       Nombre Técnico:
+    Limón (Citrus limon) Citrus, del griego kitros,
+        con el que se designaba a algunos cítricos; limón, de su nombre popular.
+        Forma oblonga a elíptico-ovada, miden entre 6 a 12.5 cm de longitud y 3 a 6 cm de ancho;
+        con margen aserrado-dentado.
+"</string>
+    <string name="infoMaiz">
+      Descripción Maíz :
+
+    El maíz, pertenece a la familia de las Poáceas o Gramíneas y es uno de los granos alimenticios más antiguos
+        que se conocen, es una planta domesticada y altamente productiva que no crece en forma salvaje
+        por lo que es completamente dependiente de los cuidados del hombre.
+    Al igual que muchas plantas, tiene una parte femenina y otra masculina que trabajan en conjunto
+        para reproducirse. La parte masculina se llama borla o rastrojo, la puedes encontrar
+        al final del tallo y se compone de pequeñas flores que producen polen.
+    Su origen se dio en la región central de México a través de la fusión de plantas que crecían
+        en forma silvestre como el teocintle o teosinte.
+    Se considera que el maíz fue cultivado hace aproximadamente 10 mil años a.C.
+        la evidencia más antigua que se tiene, es de hace 6,250 años, evidencia encontrada
+        en la cueva de Guila Naquitz, en Oaxaca, a unos kilómetros de Mitla.
+    El nombre científico de este grano es Zea Mays, los nahuas de Mesoamérica lo llamaban Centli y
+        durante su propagación por el continente americano adquirió nombres como choclo, jojoto, corn,
+        milho o elote y maíz con la llegada de los españoles a través de la adaptación fonética de mahís.
+    También se cree que en México se concentra el mayor número de variedad de maíz; blanco,
+        azul, gordo, dulce, chiquito, bofo, vendeño, conejo, dulcillo del Noroeste, chapalote y amarillo,
+        son sólo algunas de las más de 60 variedades de maíces que forman parte de nuestra alimentación diaria,
+        además de ser utilizado en la actualidad como forraje para la ganadería.
+
+    </string>
+    <string name="infoUva">
+        Descripción Vid y Uva de Mesa:
+    Planta vivaz y trepadora de la familia de las vitáceas, con tronco retorcido, vástagos muy largos,
+        flexibles y nudosos, cuyo fruto es la uva.
+        La vid es una planta leñosa trepadora; una liana que bajo su forma cultivada presenta una estructura
+        permanente de madera vieja formando un esqueleto de soporte más o menos regular.
+        Además, las cepas, presentan órganos que brotan anualmente, primero herbáceos (pámpanos)
+        y luego madurados a leñosos (sarmientos).
+
+        La uva de mesa es esa golosina natural que podemos encontrar en el mercado para su consumo
+        fresco hasta el mes de mayo. Esta fruta dulce y ovalada posee propiedades nutricionales destacables:
+        contiene vitamina C y minerales como potasio, hierro, calcio y fósforo.
+        En Argentina, la temporada de cultivo abarca desde la floración en el mes de octubre hasta el
+        cultivo durante el mes de febrero.
+    La uva es el fruto de la vid o parra, cuyo nombre científico es Vitis vinifera,
+        una planta semileñosa y/o trepadora que cuando se deja crecer libremente puede alcanzar
+        más de 30 m pero que, al podarla anualmente, queda reducida a un pequeño arbusto de 1 m.
+        Esta fruta no solo es comestible sino que sirve como materia prima para la fabricación
+        de vino y otros productos derivados.
+    El Servicio Nacional de Sanidad y Calidad Agroalimentaria (Senasa)
+        recomienda la ingesta de esta pequeña fruta de la producción nacional
+        –cuyo cultivo controla en cuanto a sanidad, inocuidad y calidad–.
+        Las normas elaboradas por el organismo sobre buenas prácticas agrícolas e
+        higiene para frutas y hortalizas favorecen que este producto inocuo –cultivado en forma segura,
+        cuidando el ambiente y la salud de los trabajadores– llegue a personas consumidoras alrededor del mundo.
+    Regiones
+La superficie de vid de la República Argentina registrada es de más de 200.000 ha.
+        y su producción anual de la fruta sobrepasa las 2.400.000 toneladas.
+        Hay 18 provincias argentinas que registran superficie cultivada de vid:
+        las principales productoras son Mendoza (más de 1.500.000 toneladas anuales),
+        San Juan (más de 500.000 toneladas anuales), La Rioja (más de 80.000 toneladas anuales),
+        que junto a Salta, Catamarca, Neuquén y Río Negro, concentran aproximadamente el 99% de la superficie de vid del país;
+        el restante 1% se distribuye en 11 provincias:
+        La Pampa, Córdoba, Buenos Aires, Tucumán, San Luis, Chubut, Entre Ríos, Jujuy, Misiones,
+        Santiago del Estero y Santa Fe
+
+    </string>
+    <string name="infoTrigo">
+        Descripción Trigo:
+    El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto.
+        Su altura es variable, va desde treinta centímetros hasta un metro y medio de largo.
+        El tallo, recto, cilíndrico, da unas hojas largas y finas que terminan en forma de lanza,
+        por lo que se les llama lanceoladas.
+    El  trigo  se  desarrolla  en  climas  subtropicales,  templados  o  ligeramente  fríos.
+        Las  plantas  requieren  una cantidad  moderada  de  agua,  entre  229  y  762  milímetros  de  lluvia.
+        Los  trigos  de  invierno  se  cultivan  en zonas templadas. La temperatura mínima para que crezca bien
+        es de 13ºC. El mejor trigo se consigue en terrenos pesados, con abundante marga y arcilla,
+        aunque tambiénes posible obtener buenos rendimientos en otros más ligeros.
+
+Desde  el  inicio  de  la  civilización,  el  trigo  es  uno  de  los  cereales  más  importantes
+        en  la  alimentación humana. En general no se consume directamente; se usa en la elaboración de alimentos,
+        sobre todo en la industria  de  la  panificación,  así  como  en  la  fabricación  de  pastas,  galletas,
+        bebidas  y  hasta  en  la producción de  combustibles.
+Existen cinco variedades de  trigo. Cuatro de  ellas pueden  utilizarse  para  la elaboración de pan;
+        el quinto es del tipo cristalino, más utilizado para las pastas.
+
+Cómo reconocer el trigo
+El grano de trigo es ovalado, parecido al arroz, con las puntas redondeadas. De una
+de ellas sobresale el germen y en la otra hay un mechón de pelos finos qu
+e se conoce como pincel, por su forma. Los  granos pueden ser blandos o duros.
+        Estos granos se  muelen para  la  obtención de  harina  para pan.
+
+Del campo a la mesa
+La  siembra  del  trigo  requiere  distintas  cantidades  de  semilla  por  superficie,
+        según  la  variedad  de  la  que estemos hablando. Cuando se siembra al voleo, es decir,
+        arrojando la semilla al aire, se emplean de 150 a 180 kilos por hectárea. Si la siembra
+        se realiza en líneas, se utiliza menos cantidad, entre 120 y 125 kilos.
+        Si se  trata de trigo para  forraje, se necesitará  más semilla.
+La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya perdieron
+        su color verde y el grano tiene suficiente consistencia. El tallo se corta
+        a  unos  treinta  centímetros  del  suelo  por  medio  de  una  máquina  cosechadora.
+        De  ahí  el  trigo  se procesa industrialmente para convertirlo en harina y llegar a tu mesa,
+        en forma de pasteles, tortillas o sopa de pasta.
+
+    </string>
 
 </resources>
