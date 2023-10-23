@@ -7,13 +7,38 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private int idUsuarios;
+    private int idCultivos;
+    private int idEnfermedades;
 
     private ImageButton btnLimon;
     private ImageButton btnMaiz;
     private ImageButton btnTrigo;
     private ImageButton btnUva;
+
+    private ArrayList<UsuarioActivity> usuarios;
+    private ArrayList<EnfermedadActivity> enfermedades;
+    private ArrayList<CultivoActivity> cultivos;
+
+    private UsuarioActivity logueado;
+
+    public MainActivity(){
+
+        usuarios = new ArrayList<>();
+        enfermedades = new ArrayList<>();
+        cultivos = new ArrayList<>();
+
+        idUsuarios=1;
+        idCultivos=1;
+        idEnfermedades=1;
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,4 +112,48 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    //Login
+    public void login(){}
+
+    //Cerrar Sesion
+
+    public void cerrarSesion(){}
+
+    //Logueado
+
+    //Obtener Listas Clon
+    List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
+    List<CultivoActivity> cultivosClon = new ArrayList<>(cultivos);
+    List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
+
+    //ABM Usuario
+
+    public boolean agregarUsuarios(String nombre,String mail,String pass,boolean esAdmin){
+        usuarios.add(new UsuarioActivity(idUsuarios,nombre,mail,pass,esAdmin));
+        idUsuarios++;
+        return true;
+    }
+    public void modificarUsuarios(){}
+    public void EliminarUsuarios(){}
+
+    //ABM Cultivo
+    public boolean agregarCultivos(String nombre, String descripcion){
+        cultivos.add(new CultivoActivity(idCultivos,nombre,descripcion));
+        idCultivos++;
+        return true;
+    }
+    public void modificarCultivos(){}
+    public void eliminarCultivos(){}
+
+    //ABM Enfermedad
+    public boolean agregarEnfermedades(String nombre, String descripcion, String solBio, String solQuim){
+        enfermedades.add(new EnfermedadActivity(idEnfermedades,nombre,descripcion,solBio,solQuim));
+        idEnfermedades++;
+        return true;
+    }
+    public void modificarEnfermedades(){}
+    public void eliminarEnfermedades(){}
+
+
 }
