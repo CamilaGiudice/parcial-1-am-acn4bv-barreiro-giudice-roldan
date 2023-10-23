@@ -30,25 +30,29 @@ public class MainActivity extends AppCompatActivity {
     private UsuarioActivity logueado;
 
 
-    //Constructor
-    public MainActivity(){
-
-        usuarios = new ArrayList<>();
-        enfermedades = new ArrayList<>();
-        cultivos = new ArrayList<>();
-
-        idUsuarios=1;
-        idCultivos=1;
-        idEnfermedades=1;
-
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Inicializacion de las listas
+        usuarios = new ArrayList<>();
+        enfermedades = new ArrayList<>();
+        cultivos = new ArrayList<>();
+
+
+        //Listas Clon
+        List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
+        List<CultivoActivity> cultivosClon = new ArrayList<>(cultivos);
+        List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
+
+        // Inicializacion de los id
+        idUsuarios=1;
+        idCultivos=1;
+        idEnfermedades=1;
+
+
+        //Linkeado de los botones
         btnLimon = findViewById(R.id.btnlimon);
         btnMaiz = findViewById(R.id.btnmaiz);
         btnTrigo = findViewById(R.id.btntrigo);
@@ -130,12 +134,6 @@ public class MainActivity extends AppCompatActivity {
 
     //Logueado
 
-
-
-    //Obtener Listas Clon
-    List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
-    List<CultivoActivity> cultivosClon = new ArrayList<>(cultivos);
-    List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
 
 
     //ABM Usuario
