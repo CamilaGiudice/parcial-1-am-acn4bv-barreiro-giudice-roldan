@@ -17,14 +17,15 @@
     android:paddingHorizontal="3dp"
     android:paddingVertical="6dp" >
 
+
     <!--Contenido del cuadro modal-->
-        <ImageView
+        <!--<ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@tools:sample/avatars"
             app:srcCompat="@mipmap/ic_limon_round" />
-
+        -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

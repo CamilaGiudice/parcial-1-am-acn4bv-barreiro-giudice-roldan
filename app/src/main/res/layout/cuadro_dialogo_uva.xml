@@ -16,6 +16,7 @@
 
 
         <!--Contenido del cuadro modal-->
+       <!--
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             android:scaleType="centerInside"
             android:src="@tools:sample/avatars"
             app:srcCompat="@mipmap/ic_uva" />
-
+       -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
