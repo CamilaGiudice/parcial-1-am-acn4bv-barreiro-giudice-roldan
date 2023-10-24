@@ -20,11 +20,14 @@ public class LoginActivity extends AppCompatActivity{
     private EditText editTxtMail;
     private EditText editTextPass;
     private Button btnIniciarSesion;
+    private MainActivity mainActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        mainActivity = new MainActivity();
         //Linkeo
         editTxtMail=findViewById(R.id.editTextTextEmailAddress);
         editTextPass=findViewById(R.id.editTextTextPassword);
@@ -38,21 +41,16 @@ public class LoginActivity extends AppCompatActivity{
                 String email = editTxtMail.getText().toString();
                 String password = editTextPass.getText().toString();
 
+                boolean loginExitoso = mainActivity.login(email,password);
 
-                MainActivity mainActivity = new MainActivity();
-
-                if (mainActivity.login(email,password)){
-
+                if (loginExitoso){
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
-                    //inicio de sesion exitoso
-                    Toast.makeText(LoginActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-
-                }else {
-                    //Inicio de sesion falló
-                    Toast.makeText(LoginActivity.this,"Error en el inicio de sesión", Toast.LENGTH_SHORT).show();
-
+                }else{
+                    Toast.makeText(LoginActivity.this,"Inicio de sesión fallido", Toast.LENGTH_SHORT).show();
                 }
+
+
 
             }
         });
