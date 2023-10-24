@@ -1,26 +1,30 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
-
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#278BC34A">
 
     <LinearLayout
-        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:orientation="vertical">
 
-    <!--Contenido del cuadro modal-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="529dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:text="@string/infoUva"
-        />
+
+        <!--Imagen de uva-->
+
+
+        <!--Contenido del cuadro modal-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#603A47B7"
+            android:text="@string/infoUva"
+            android:textSize="24sp" />
+
     </LinearLayout>
 </ScrollView>
