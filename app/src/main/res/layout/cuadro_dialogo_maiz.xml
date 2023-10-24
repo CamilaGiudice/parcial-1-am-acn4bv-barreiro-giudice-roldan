@@ -12,13 +12,14 @@
     android:orientation="vertical">
 
     <!--Contenido del cuadro modal-->
+    <!--
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_maiz"
         android:layout_marginBottom="20dp"/>
-
+-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

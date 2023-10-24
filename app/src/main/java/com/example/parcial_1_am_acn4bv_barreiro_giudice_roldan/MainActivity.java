@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -161,17 +162,17 @@ public class MainActivity extends AppCompatActivity {
             if (!usu.isUsuarioBloqueado()) {
 
                 // Verifico que exista el correo electrónico
-                if (usu.getMailUsuario().equals(mail)) {
+                if (usu.getMailUsuario().equals(mail) && mail!=null && mail!="") {
 
                     // Verifico que la contraseña sea correcta
-                    if (usu.getPasswordUsuario().equals(pass)) {
+                    if (usu.getPasswordUsuario().equals(pass) && pass!=null && pass!="") {
 
                         // Guarda al usuario en logueado
                         logueado = usu;
 
-                        //Mostrar el nombre
-                        TextView nombreUsuario = findViewById(R.id.nombreUsuario);
-                        nombreUsuario.setText("Usuario: "+usu.getNombreUsuario());
+
+                        mostrarMensaje("Inicio de sesion exitoso");
+                        actualizarVista();
 
                         return true;
 
@@ -188,9 +189,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+        //Mostrar mensaje de error
+        mostrarMensaje("Inicio de sesion fallido");
         return false;
     }
 
+    // Metodo mostrar mensaje
+    private void mostrarMensaje(String mensaje){
+        Toast.makeText(this,mensaje,Toast.LENGTH_SHORT).show();
+    }
+
+    //Metodo actualizar vista
+    private void actualizarVista(){
+        //Mostrar el nombre
+        TextView nombreUsuario = findViewById(R.id.nombreUsuario);
+        nombreUsuario.setText("Usuario: "+logueado.getNombreUsuario());
+    }
 
     //Cerrar Sesion
 
