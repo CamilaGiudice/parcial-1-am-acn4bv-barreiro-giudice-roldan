@@ -122,13 +122,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Login
-    public void login(){}
+    public boolean login(String mail, String pass) {
+        for (UsuarioActivity usu : usuarios) {
+            // Verifico que el usuario no esté bloqueado
+            if (!usu.isUsuarioBloqueado()) {
+                // Verifico que exista el correo electrónico
+                if (usu.getMailUsuario().equals(mail)) {
+                    // Verifico que la contraseña sea correcta
+                    if (usu.getPasswordUsuario().equals(pass)) {
+                        // Guarda al usuario en logueado
+                        logueado = usu;
+                        return true;
+                    } else {
+                        // La contraseña es incorrecta, suma los intentos fallidos y bloquea después de 3 intentos
+                        int intentosFallidos = usu.getIntentosFallidos() + 1;
+                        usu.setIntentosFallidos(intentosFallidos);
+                        if (intentosFallidos >= 3) {
+                            usu.setUsuarioBloqueado(true);
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 
     //Cerrar Sesion
 
-    public void cerrarSesion(){}
+    public void cerrarSesion(){
+        logueado = null;
+    }
 
 
 
