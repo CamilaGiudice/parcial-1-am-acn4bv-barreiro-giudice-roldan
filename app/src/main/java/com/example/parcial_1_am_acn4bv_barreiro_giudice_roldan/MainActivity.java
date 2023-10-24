@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,16 +20,24 @@ public class MainActivity extends AppCompatActivity {
     private int idCultivos;
     private int idEnfermedades;
 
+    //Botones Modal
     private ImageButton btnLimon;
     private ImageButton btnMaiz;
     private ImageButton btnTrigo;
     private ImageButton btnUva;
 
+    //Botones Ingresar y cerrar sesion
+    private Button btnIngresar;
+    private Button btnCerrarSesion;
+    private UsuarioActivity logueado;
+
+
+    //Listas no inicializadas
     private ArrayList<UsuarioActivity> usuarios;
     private ArrayList<EnfermedadActivity> enfermedades;
     private ArrayList<CultivoActivity> cultivos;
 
-    private UsuarioActivity logueado;
+
 
 
     @Override
@@ -57,6 +67,26 @@ public class MainActivity extends AppCompatActivity {
         btnMaiz = findViewById(R.id.btnmaiz);
         btnTrigo = findViewById(R.id.btntrigo);
         btnUva = findViewById(R.id.btnuva);
+
+        btnIngresar= findViewById(R.id.ingresar);
+        btnCerrarSesion = findViewById(R.id.cerrarSesion);
+
+
+        //Metodo Ir a Login(ingresar)
+        btnIngresar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+            }
+        });
+
+        //Metodo Cerrar Sesion
+        btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cerrarSesion();
+            }
+        });
 
         //Metodo limon
         btnLimon.setOnClickListener(new View.OnClickListener() {
@@ -124,30 +154,40 @@ public class MainActivity extends AppCompatActivity {
     //Login
     public boolean login(String mail, String pass) {
         for (UsuarioActivity usu : usuarios) {
+
             // Verifico que el usuario no esté bloqueado
             if (!usu.isUsuarioBloqueado()) {
+
                 // Verifico que exista el correo electrónico
                 if (usu.getMailUsuario().equals(mail)) {
+
                     // Verifico que la contraseña sea correcta
                     if (usu.getPasswordUsuario().equals(pass)) {
+
                         // Guarda al usuario en logueado
                         logueado = usu;
+
+                        //Mostrar el nombre
+                        TextView nombreUsuario = findViewById(R.id.nombreUsuario);
+                        nombreUsuario.setText("Usuario: "+usu.getNombreUsuario());
+
                         return true;
+
                     } else {
                         // La contraseña es incorrecta, suma los intentos fallidos y bloquea después de 3 intentos
                         int intentosFallidos = usu.getIntentosFallidos() + 1;
                         usu.setIntentosFallidos(intentosFallidos);
+
                         if (intentosFallidos >= 3) {
                             usu.setUsuarioBloqueado(true);
                         }
                     }
                 }
             }
+
         }
         return false;
     }
-
-
 
 
     //Cerrar Sesion
@@ -156,9 +196,6 @@ public class MainActivity extends AppCompatActivity {
         logueado = null;
     }
 
-
-
-    //Logueado
 
 
 
