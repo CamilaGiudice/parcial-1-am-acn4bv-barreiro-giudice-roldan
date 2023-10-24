@@ -14,17 +14,18 @@
     android:orientation="vertical">
 
     <!--Contenido del cuadro modal-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="348dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="494dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
 
 
-        android:text="@string/infoLimon" />
-
+            android:background="#BEE5F640"
+            android:text="@string/infoLimon"
+            android:textSize="24sp" />
 
 
     </LinearLayout>

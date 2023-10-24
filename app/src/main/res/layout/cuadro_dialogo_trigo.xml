@@ -21,6 +21,8 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/infoTrigo" />
+        android:background="#8DFFEB3B"
+        android:text="@string/infoTrigo"
+        android:textSize="24sp" />
 </LinearLayout>
     </ScrollView>
