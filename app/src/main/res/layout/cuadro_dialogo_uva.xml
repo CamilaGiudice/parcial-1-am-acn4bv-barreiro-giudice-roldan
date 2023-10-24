@@ -22,14 +22,16 @@
             android:layout_height="wrap_content"
             android:scaleType="centerInside"
             android:src="@tools:sample/avatars"
-            app:srcCompat="@mipmap/ic_uva" />
+            app:srcCompat="@mipmap/ic_uva"
+            android:layout_margin="3dp"
+            android:layout_marginBottom="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="3dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="3dp"
             android:background="#603A47B7"
             android:text="@string/infoUva"

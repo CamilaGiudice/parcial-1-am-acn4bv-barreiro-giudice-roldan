@@ -23,14 +23,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@tools:sample/avatars"
-            app:srcCompat="@mipmap/ic_limon_round" />
+            app:srcCompat="@mipmap/ic_limon_round"
+            android:layout_marginBottom="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="3dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="3dp"
             android:background="#BEE5F640"
             android:text="@string/infoLimon"
