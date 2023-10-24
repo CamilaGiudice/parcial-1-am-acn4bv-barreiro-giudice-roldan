@@ -13,6 +13,7 @@
     android:orientation="vertical">
 
     <!--Contenido del cuadro modal-->
+    <!--
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:src="@tools:sample/avatars"
         app:srcCompat="@mipmap/ic_trigo"
         android:layout_marginBottom="20dp"/>
-
+-->
     <TextView
 
         android:layout_width="wrap_content"
