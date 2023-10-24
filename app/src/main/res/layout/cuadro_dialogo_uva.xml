@@ -11,8 +11,11 @@
         android:layout_marginTop="30dp"
         android:orientation="vertical">
 
-    <!--Contenido del cuadro modal-->
 
+        <!--Imagen de uva-->
+
+
+        <!--Contenido del cuadro modal-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="529dp"
