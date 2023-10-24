@@ -2,31 +2,31 @@
 
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
 
 
     <LinearLayout
-    android:layout_marginTop="30dp"
+    android:layout_marginTop="3dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="3dp"
+    android:paddingVertical="6dp" >
 
     <!--Contenido del cuadro modal-->
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="494dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-
-
             android:background="#BEE5F640"
             android:text="@string/infoLimon"
             android:textSize="24sp" />
-
 
     </LinearLayout>
 </ScrollView>
