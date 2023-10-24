@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity{
     private Button btnIniciarSesion;
     private MainActivity mainActivity;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,21 +42,13 @@ public class LoginActivity extends AppCompatActivity{
                 String email = editTxtMail.getText().toString();
                 String password = editTextPass.getText().toString();
 
-                boolean loginExitoso = mainActivity.login(email,password);
-
-                if (loginExitoso){
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(LoginActivity.this,"Inicio de sesión fallido", Toast.LENGTH_SHORT).show();
-                }
-
-
+                //Llamar al método de iniciar sesion de mi clase lógica
+                mainActivity.login(email,password);
 
             }
         });
 
-
     }
+
 
 }
