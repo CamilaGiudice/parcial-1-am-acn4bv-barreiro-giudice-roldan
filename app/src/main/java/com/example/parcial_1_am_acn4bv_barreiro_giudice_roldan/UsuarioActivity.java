@@ -10,6 +10,8 @@ public class UsuarioActivity extends MainActivity{
     private String mailUsuario;
     private String passwordUsuario;
     private boolean esAdmin;
+    private int intentosFallidos;
+    private boolean usuarioBloqueado;
     private ArrayList<CultivoActivity> misCultivos;
     private ArrayList<EnfermedadActivity> misEnfermedades;
 
@@ -24,6 +26,8 @@ public class UsuarioActivity extends MainActivity{
         this.nombreUsuario=nombreUsuario;
         this.mailUsuario=mailUsuario;
         this.passwordUsuario=passwordUsuario;
+        intentosFallidos=0;
+        usuarioBloqueado=false;
         misCultivos=new ArrayList<>();
         misEnfermedades=new ArrayList<>();
     }
@@ -87,8 +91,24 @@ public class UsuarioActivity extends MainActivity{
         this.misEnfermedades = misEnfermedades;
     }
 
+    public int getIntentosFallidos() {
+        return intentosFallidos;
+    }
 
-    //To String
+    public void setIntentosFallidos(int intentosFallidos) {
+        this.intentosFallidos = intentosFallidos;
+    }
+
+    public boolean isUsuarioBloqueado() {
+        return usuarioBloqueado;
+    }
+
+    public void setUsuarioBloqueado(boolean usuarioBloqueado) {
+        this.usuarioBloqueado = usuarioBloqueado;
+    }
+
+//To String
+
 
     @Override
     public String toString() {
@@ -98,6 +118,8 @@ public class UsuarioActivity extends MainActivity{
                 ", mailUsuario='" + mailUsuario + '\'' +
                 ", passwordUsuario='" + passwordUsuario + '\'' +
                 ", esAdmin=" + esAdmin +
+                ", intentosFallidos=" + intentosFallidos +
+                ", usuarioBloqueado=" + usuarioBloqueado +
                 ", misCultivos=" + misCultivos +
                 ", misEnfermedades=" + misEnfermedades +
                 '}';
