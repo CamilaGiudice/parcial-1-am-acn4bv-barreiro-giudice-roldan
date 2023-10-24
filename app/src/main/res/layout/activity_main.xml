@@ -75,9 +75,11 @@
         android:id="@+id/txt_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="@string/txt_home"
-        android:textColor="@color/darkishgreen"
 
+        android:textColor="@color/darkishgreen"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
