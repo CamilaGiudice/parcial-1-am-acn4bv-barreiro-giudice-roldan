@@ -4,28 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
 
     //Atributos
     private int idUsuarios;
     private int idCultivos;
     private int idEnfermedades;
 
-    //Botones Modal
-    private ImageButton btnLimon;
-    private ImageButton btnMaiz;
-    private ImageButton btnTrigo;
-    private ImageButton btnUva;
+
 
     //Botones Enfermedades
     // Hernan
@@ -51,18 +53,48 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<CultivoActivity> cultivos;
 
 
+    // Botones en el Constructor
+    public MainActivity() {
+
+        btnLimon = findViewById(R.id.btnlimon);
+        btnMaiz = findViewById(R.id.btnmaiz);
+        btnTrigo = findViewById(R.id.btntrigo);
+        btnUva = findViewById(R.id.btnuva);
+
+    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        super.onCreate (savedInstanceState);
+        setContentView (R.layout.activity_main);
+        // Para manipular el backend del Firebase
+        mAuth = FirebaseAuth.getInstance ();
+    }
+    // Firebase on Star para ver si hay usuarios
+        @Override
+        public void onStart() {
+            super.onStart();
+            // Check if user is signed in (non-null) and update UI accordingly.
+        // este metodo esta asociado a algún usuario?
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser != null) {
+                Log.i (" firebase", "ya hay un usuario con esos datos");
+            }
+            else{
+                Log.i(" firebase ", "Logueese");
+                }
+        }
+
 
         //Inicializacion de las listas
+      /*
         usuarios = new ArrayList<>();
+
         enfermedades = new ArrayList<>();
         cultivos = new ArrayList<>();
 
+       */
 
         //Listas Clon
         List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
@@ -70,29 +102,35 @@ public class MainActivity extends AppCompatActivity {
         List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
 
         // Inicializacion de los id
-        idUsuarios=1;
+     /*   idUsuarios=1;
         idCultivos=1;
         idEnfermedades=1;
 
+      */
 
         //Linkeado de los botones
-        btnLimon = findViewById(R.id.btnlimon);
-        btnMaiz = findViewById(R.id.btnmaiz);
-        btnTrigo = findViewById(R.id.btntrigo);
-        btnUva = findViewById(R.id.btnuva);
+        //Botones Modal
+     public ImageButton btnLimon;
+     public ImageButton btnMaiz;
+    public ImageButton btnTrigo;
+    public ImageButton btnUva;
 
-        btnIngresar= findViewById(R.id.ingresar);
+     /*   btnIngresar= findViewById(R.id.ingresar);
         btnCerrarSesion = findViewById(R.id.cerrarSesion);
 
+      */
 
-        //Metodo Ir a Login(ingresar)
-        btnIngresar.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
+/*
+       creo que el login INTERFIERE CON FIREBASE //
+        Metodo Ir a Login(ingresar)
+      */
+  /*    btnIngresar.setOnClickListener(new View.OnClickListener(){
+         @Override
+          public void onClick(View v){
+               Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+               startActivity(intent);
             }
-        });
+       });
 
 
         //Metodo Cerrar Sesion
@@ -103,8 +141,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+   */
+// VER TODO DESDE ACA
         //Metodo limon
-        btnLimon.setOnClickListener(new View.OnClickListener() {
+   /*     btnLimon.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 //Crear el cuadro de dialogo personalizado
@@ -165,6 +206,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    */
 
     //Login
     public boolean login(String mail, String pass) {
