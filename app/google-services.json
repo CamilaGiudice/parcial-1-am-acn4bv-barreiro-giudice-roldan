@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135955527101",
+    "project_id": "appiagro-362cb",
+    "storage_bucket": "appiagro-362cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135955527101:android:efae31e67f98e98e4cced4",
+        "android_client_info": {
+          "package_name": "com.example.parcial_1_am_acn4bv_barreiro_giudice_roldan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2wht73CAc7AayP1LjBu3H4LOeV4TniEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
