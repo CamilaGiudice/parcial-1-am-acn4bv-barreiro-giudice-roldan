@@ -27,6 +27,18 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btnTrigo;
     private ImageButton btnUva;
 
+    //Botones Enfermedades
+    // Hernan
+   private Button enfLimon;
+    // Cami
+   private Button enfTrigo;
+    // Hernan
+   private Button enfUva;
+    // Cami
+   private Button enfMaiz;
+
+
+
     //Botones Ingresar y cerrar sesion
     private Button btnIngresar;
     private Button btnCerrarSesion;
@@ -300,7 +312,9 @@ public class MainActivity extends AppCompatActivity {
         idEnfermedades++;
         return true;
     }
-    public boolean modificarEnfermedades(int id, String nombre, String descripcion, String solBio, String solQuim){
+    public boolean modificarEnfermedades(int id, String nombre, String descripcion, String solBio,
+
+                                         String solQuim){
 
         for (EnfermedadActivity enf : enfermedades){
             if (enf.getIdEnfermedad()==id){
