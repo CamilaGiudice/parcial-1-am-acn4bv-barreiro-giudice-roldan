@@ -19,31 +19,35 @@ import java.util.List;
 public class LoginActivity extends AppCompatActivity{
 
     public void login(String email, String password){
-        Log.i ("firebase", email + password);
-
+        Log.i ("firebase", "email"+ email);
+        Log.i ("firebase", "password"+ password);
     }
-public void onLoginButtonClick(View view){
-        EditText emailInput = findViewById (R.id.editTextTextEmailAddress);
-        EditText passInput = findViewById (R.id.editTextTextPassword);
 
-        String email = emailInput.getText ().toString ();
-        String password= passInput.getText ().toString();
+  // Metodo para ejecutar el boton del login
+    public void onLoginButtonClick(View view) {
+    EditText emailInput = findViewById (R.id.editTextTextEmailAddress);
+    EditText passInput = findViewById (R.id.editTextTextPassword);
 
-        // this.login (getString(R.string.email_hernan_roldan_com_ar),  getString(R.string.password_1234));
-// Login con Firebase
-        this.login (email, password);
+    String email = emailInput.getText ().toString ();
+    String password = passInput.getText ().toString ();
 
+    // Login con Firebase
+    this.login (email, password);
+ }
+    // this.login (getString(R.string.email_hernan_roldan_com_ar),  getString(R.string.password_1234));
 
-    private EditText editTxtMail;
-   private EditText editTextPass;
-   private Button btnIniciarSesion;
-   private MainActivity mainActivity;
-
+    /*
+        private EditText editTxtMail;
+        private EditText editTextPass;
+        private Button btnIniciarSesion;
+        private MainActivity mainActivity;
+ */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
 
        /* mainActivity = new MainActivity();
         //Linkeo
