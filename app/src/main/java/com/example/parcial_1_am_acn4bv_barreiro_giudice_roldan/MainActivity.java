@@ -82,8 +82,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.i (" firebase", "ya hay un usuario con esos datos");
             }
             else{
+                Intent intent = new Intent(getApplicationContext (),
+                        LoginActivity.class);
+                startActivity (intent);
                 Log.i(" firebase ", "Logueese");
-                }
+
+            }
         }
 
 
