@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.59"
-        tools:text="@string/password_1234" />
+        tools:text="@string/password"
+        />
 
     <ImageView
         android:id="@+id/loginicono"
@@ -69,10 +70,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.416"
-        tools:text="@string/email_hernan_roldan_com_ar" />
+        tools:text="@string/email" />
 
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E91E63"

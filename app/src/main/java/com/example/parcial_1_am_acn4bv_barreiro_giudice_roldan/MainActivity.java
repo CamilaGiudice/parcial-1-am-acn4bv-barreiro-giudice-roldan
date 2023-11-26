@@ -22,6 +22,11 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
+// atributos botones HERNAN
+    private ImageButton btnLimon;
+    private ImageButton btnMaiz;
+    private ImageButton btnTrigo;
+    private ImageButton btnUva;
     //Atributos
     private int idUsuarios;
     private int idCultivos;
@@ -55,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Botones en el Constructor
     public MainActivity() {
+        //Linkeado de los botones
+        //Botones Modal
+
 
         btnLimon = findViewById(R.id.btnlimon);
         btnMaiz = findViewById(R.id.btnmaiz);
@@ -68,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_main);
+
         // Para manipular el backend del Firebase
         mAuth = FirebaseAuth.getInstance ();
     }
@@ -89,6 +98,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
+        // HERNAN : Metodo para cerrar Sesion
+        public void logout(View v){
+        mAuth.signOut ();
+        Intent intent = new Intent (getApplicationContext (), LoginActivity.class);
+                startActivity (intent);
+                Log.i("firebase", "volviendo al loguin");
+        }
+
+
 
 
 
@@ -105,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
         List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
         List<CultivoActivity> cultivosClon = new ArrayList<>(cultivos);
         List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
+    }
 
         // Inicializacion de los id
      /*   idUsuarios=1;
@@ -114,12 +133,13 @@ public class MainActivity extends AppCompatActivity {
       */
 
         //Linkeado de los botones
-        //Botones Modal
+        //Botones Modal Ya declarados
+   /*
      public ImageButton btnLimon;
      public ImageButton btnMaiz;
     public ImageButton btnTrigo;
     public ImageButton btnUva;
-
+*/
      /*   btnIngresar= findViewById(R.id.ingresar);
         btnCerrarSesion = findViewById(R.id.cerrarSesion);
 
@@ -214,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
 
     */
 
-    //Login
+   /* //Login
     public boolean login(String mail, String pass) {
         for (UsuarioActivity usu : usuarios) {
 
@@ -388,5 +408,4 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-
-}
+*/
