@@ -27,10 +27,13 @@ public void onLoginButtonClick(View view){
         EditText passInput = findViewById (R.id.editTextTextPassword);
 
         String email = emailInput.getText ().toString ();
+        String password= passInput.getText ().toString();
 
-        this.login ("hernan@roldan.com.ar",  "1234");
+        // this.login (getString(R.string.email_hernan_roldan_com_ar),  getString(R.string.password_1234));
+// Login con Firebase
+        this.login (email, password);
 
-}
+
     private EditText editTxtMail;
    private EditText editTextPass;
    private Button btnIniciarSesion;
