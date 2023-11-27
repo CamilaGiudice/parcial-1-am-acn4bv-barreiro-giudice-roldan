@@ -41,7 +41,7 @@
         android:contentDescription="@string/btn_limon"
         app:layout_constraintBottom_toTopOf="@+id/btnuva"
         app:layout_constraintEnd_toStartOf="@+id/btntrigo"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696"
@@ -148,27 +148,30 @@
         android:text="Trigo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonenfLimon"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btntrigo" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#064008"
         android:text="Uva"
+        app:layout_constraintBottom_toTopOf="@+id/ingresar"
         app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.413"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="531dp" />
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#0D3A0F"
         android:text="Maíz"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="531dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnmaiz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
