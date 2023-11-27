@@ -33,20 +33,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@mipmap/ic_maiz_foreground" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="44dp"
-        android:backgroundTint="#063E08"
-        android:text="Enf Maíz"
-        app:layout_constraintBottom_toTopOf="@+id/cerrarSesion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/btnmaiz" />
-
     <ImageButton
         android:id="@+id/btnlimon"
         android:layout_width="wrap_content"
@@ -54,10 +40,10 @@
         android:contentDescription="@string/btn_limon"
         app:layout_constraintBottom_toTopOf="@+id/btnuva"
         app:layout_constraintEnd_toStartOf="@+id/btntrigo"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655"
+        app:layout_constraintVertical_bias="0.679"
         app:srcCompat="@mipmap/ic_limon_foreground" />
 
     <Button
@@ -66,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginEnd="258dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="46dp"
         android:backgroundTint="#063E08"
         android:text="Enf Limón"
         app:layout_constraintBottom_toTopOf="@+id/btnuva"
@@ -86,21 +72,6 @@
         app:layout_constraintVertical_bias="0.655"
         app:srcCompat="@mipmap/ic_trigo_foreground" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="53dp"
-        android:backgroundTint="#063E08"
-        android:text="Enf Trigo"
-        app:layout_constraintBottom_toTopOf="@+id/btnmaiz"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
-        app:layout_constraintStart_toEndOf="@+id/btnlimon"
-        app:layout_constraintTop_toBottomOf="@+id/btntrigo" />
-
     <ImageButton
         android:id="@+id/btnuva"
         android:layout_width="wrap_content"
@@ -112,20 +83,6 @@
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/ic_uva_foreground" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="256dp"
-        android:layout_marginBottom="44dp"
-        android:backgroundTint="#063E08"
-        android:text="Enf Uva"
-        app:layout_constraintBottom_toTopOf="@+id/ingresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnuva" />
 
     <TextView
         android:id="@+id/txt_home"
