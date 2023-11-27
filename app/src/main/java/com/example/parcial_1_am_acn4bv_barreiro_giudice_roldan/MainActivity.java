@@ -22,26 +22,23 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
-    // atributos botones HERNAN
-    private ImageButton btnLimon;
-    private ImageButton btnMaiz;
-    private ImageButton btnTrigo;
-    private ImageButton btnUva;
     //Atributos
     private int idUsuarios;
     private int idCultivos;
     private int idEnfermedades;
 
 
+
     //Botones Enfermedades
     // Hernan
-    private Button enfLimon;
+   private Button enfLimon;
     // Cami
-    private Button enfTrigo;
+   private Button enfTrigo;
     // Hernan
-    private Button enfUva;
+   private Button enfUva;
     // Cami
-    private Button enfMaiz;
+   private Button enfMaiz;
+
 
 
     //Botones Ingresar y cerrar sesion
@@ -58,19 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
     // Botones en el Constructor
     public MainActivity() {
-        //Linkeado de los botones
-        //Botones Modal
 
-        ImageButton btnLimon;
-        ImageButton btnMaiz;
-        ImageButton btnTrigo;
-        ImageButton btnUva;
-
-
-        btnLimon = findViewById (R.id.btnlimon);
-        btnMaiz = findViewById (R.id.btnmaiz);
-        btnTrigo = findViewById (R.id.btntrigo);
-        btnUva = findViewById (R.id.btnuva);
+        btnLimon = findViewById(R.id.btnlimon);
+        btnMaiz = findViewById(R.id.btnmaiz);
+        btnTrigo = findViewById(R.id.btntrigo);
+        btnUva = findViewById(R.id.btnuva);
 
     }
 
@@ -79,39 +68,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_main);
-
         // Para manipular el backend del Firebase
         mAuth = FirebaseAuth.getInstance ();
     }
-
     // Firebase on Star para ver si hay usuarios
-    @Override
-    public void onStart() {
-        super.onStart ();
-        // Check if user is signed in (non-null) and update UI accordingly.
+        @Override
+        public void onStart() {
+            super.onStart();
+            // Check if user is signed in (non-null) and update UI accordingly.
         // este metodo esta asociado a algún usuario?
-        FirebaseUser currentUser = mAuth.getCurrentUser ();
-        if (currentUser != null) {
-            Log.i (" firebase", "ya hay un usuario con esos datos");
-        } else {
-            Intent intent = new Intent (getApplicationContext (),
-                    LoginActivity.class);
-            startActivity (intent);
-            Log.i (" firebase ", "Logueese");
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser != null) {
+                Log.i (" firebase", "ya hay un usuario con esos datos");
+            }
+            else{
+                Intent intent = new Intent(getApplicationContext (),
+                        LoginActivity.class);
+                startActivity (intent);
+                Log.i(" firebase ", "Logueese");
 
+            }
         }
-    }
-
-    // HERNAN : Metodo para cerrar Sesion
-    public void logout(View v) {
-        mAuth.signOut ();
-        Intent intent = new Intent (getApplicationContext (), LoginActivity.class);
-        startActivity (intent);
-        Log.i ("firebase", "volviendo al loguin");
-    }
 
 
-    //Inicializacion de las listas
+
+        //Inicializacion de las listas
       /*
         usuarios = new ArrayList<>();
 
@@ -120,12 +101,10 @@ public class MainActivity extends AppCompatActivity {
 
        */
 
-    //Listas Clon
-    List<UsuarioActivity> usuariosClon = new ArrayList<> (usuarios);
-    List<CultivoActivity> cultivosClon = new ArrayList<> (cultivos);
-    List<EnfermedadActivity> enfermedadesClon = new ArrayList<> (enfermedades);
-}
-
+        //Listas Clon
+        List<UsuarioActivity> usuariosClon = new ArrayList<>(usuarios);
+        List<CultivoActivity> cultivosClon = new ArrayList<>(cultivos);
+        List<EnfermedadActivity> enfermedadesClon = new ArrayList<>(enfermedades);
 
         // Inicializacion de los id
      /*   idUsuarios=1;
@@ -135,16 +114,19 @@ public class MainActivity extends AppCompatActivity {
       */
 
         //Linkeado de los botones
-        //Botones Modal Ya declarados
-   /*
+        //Botones Modal
+     public ImageButton btnLimon;
+     public ImageButton btnMaiz;
+    public ImageButton btnTrigo;
+    public ImageButton btnUva;
 
-*/
      /*   btnIngresar= findViewById(R.id.ingresar);
-        btnCerrarSesion = findViewById(R.id.cerrarSesion)
+        btnCerrarSesion = findViewById(R.id.cerrarSesion);
+
       */
 
 /*
-     //  creo que el login INTERFIERE CON FIREBASE //
+       creo que el login INTERFIERE CON FIREBASE //
         Metodo Ir a Login(ingresar)
       */
   /*    btnIngresar.setOnClickListener(new View.OnClickListener(){
@@ -165,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
    */
-// VER TODO DESDE ACA para restablecer los onclickListener
+// VER TODO DESDE ACA
         //Metodo limon
    /*     btnLimon.setOnClickListener(new View.OnClickListener() {
 
@@ -228,12 +210,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
 
+    */
 
-
-
-
-   /* //Login
+    //Login
     public boolean login(String mail, String pass) {
         for (UsuarioActivity usu : usuarios) {
 
@@ -407,4 +388,5 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-*/
+
+}

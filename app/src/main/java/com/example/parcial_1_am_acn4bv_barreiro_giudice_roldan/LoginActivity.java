@@ -26,27 +26,9 @@ public class LoginActivity extends AppCompatActivity {
     // Agrego una instancia del Firebase para loguearse
     private FirebaseAuth mAuth;
 
-    // Para generar  usuario en el login con email y contraseña
-    public void login(String email, String password) {
-        Log.i ("firebase", "email" + email);
-        Log.i ("firebase", "password" + password);
-
-        mAuth.createUserWithEmailAndPassword (email, password)
-                .addOnCompleteListener (new OnCompleteListener<AuthResult> () {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-
-                        if (task.isSuccessful ()) {
-                            Intent intent = new Intent (getApplicationContext (), MainActivity.class);
-                            startActivity (intent);
-                        } else {
-                            Toast.makeText (LoginActivity.this, "Falló el login.",
-                                    Toast.LENGTH_SHORT).show ();
-
-                        }
-                    }
-                });
-
+    public void login(String email, String password){
+        Log.i ("firebase", "email"+ email);
+        Log.i ("firebase", "password"+ password);
     }
 
   // Metodo para ejecutar el boton del login
