@@ -36,16 +36,15 @@ public class MainActivity extends AppCompatActivity {
    private Button enfUva;
     private Button enfMaiz;
 
-    // Cami   IMAGEN DE BOTONES
+    // Cami IMAGEN DE BOTONES
 
     public ImageButton btnLimon;
     public ImageButton btnMaiz;
     public ImageButton btnTrigo;
     public ImageButton btnUva;
 
-
-
     //Botones Ingresar y cerrar sesion
+    // HERNAN BOTONES
     private Button btnIngresar;
     private Button btnCerrarSesion;
     private UsuarioActivity logueado;
@@ -71,10 +70,14 @@ public class MainActivity extends AppCompatActivity {
         btnTrigo = findViewById(R.id.btntrigo);
         btnUva = findViewById(R.id.btnuva);
 
+// HERNAN  - enfLimon y enfTrigo
         enfLimon= findViewById (R.id.btnELimon);
         enfTrigo= findViewById (R.id.btnETrigo);
+
+ // CAMI  - enfUva y enfMaiz
         enfUva = findViewById (R.id.btnEUva);
         enfMaiz = findViewById (R.id.btnEMaiz);
+
 
         btnIngresar =findViewById (R.id.ingresar);
         btnCerrarSesion = findViewById (R.id.cerrarSesion);
@@ -84,6 +87,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (getApplicationContext (),Enfermedades_Limon.class);
+                startActivity (intent);
+            }
+        });
+        // HERNAN ----
+        enfTrigo.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (getApplicationContext (), Enfermedades_Trigo.class);
+                startActivity (intent);
+            }
+        });
+        // HERNAN   ---
+        enfUva.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (getApplicationContext (), Enfermedades_Uva.class);
+                startActivity (intent);
+            }
+        });
+
+        // HERNAN  -------
+
+        enfMaiz.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (getApplicationContext (), Enfermedades_Maiz.class);
                 startActivity (intent);
             }
         });
