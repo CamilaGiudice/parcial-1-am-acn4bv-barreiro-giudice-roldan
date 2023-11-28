@@ -20,7 +20,7 @@
         app:srcCompat="@mipmap/ic_trigo_foreground" />
 
     <TextView
-        android:id="@+id/enfermedades_trigo"
+        android:id="@+id/enfermedades_Trigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="516dp"
