@@ -113,12 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
       */
 
-        //Linkeado de los botones
-        //Botones Modal
-     public ImageButton btnLimon;
-     public ImageButton btnMaiz;
-    public ImageButton btnTrigo;
-    public ImageButton btnUva;
+
 
      /*   btnIngresar= findViewById(R.id.ingresar);
         btnCerrarSesion = findViewById(R.id.cerrarSesion);
@@ -129,13 +124,15 @@ public class MainActivity extends AppCompatActivity {
        creo que el login INTERFIERE CON FIREBASE //
         Metodo Ir a Login(ingresar)
       */
-  /*    btnIngresar.setOnClickListener(new View.OnClickListener(){
+
+
+   /* btnIngresar.setOnClickListener(new View.OnClickListener(){
          @Override
           public void onClick(View v){
                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                startActivity(intent);
             }
-       });
+       })
 
 
         //Metodo Cerrar Sesion
@@ -148,10 +145,20 @@ public class MainActivity extends AppCompatActivity {
 
    */
 // VER TODO DESDE ACA
+//Linkeado de los botones
+//Botones Modal
+   public ImageButton btnLimon;
+    public ImageButton btnMaiz;
+    public ImageButton btnTrigo;
+    public ImageButton btnUva;
         //Metodo limon
-   /*     btnLimon.setOnClickListener(new View.OnClickListener() {
 
-            @Override
+
+
+// VER DESDE ACA PORQUE HACE TANTO ERROR EL SETONCLICKLISTENER
+   /*
+    btnLimon.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View v) {
                 //Crear el cuadro de dialogo personalizado
                 Dialog cuadroDialogoLimon = new Dialog(MainActivity.this);
@@ -164,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
                 cuadroDialogoLimon.show();
             }
         });
-
+/*
        //Metodo Maiz
 
        btnMaiz.setOnClickListener(new View.OnClickListener() {

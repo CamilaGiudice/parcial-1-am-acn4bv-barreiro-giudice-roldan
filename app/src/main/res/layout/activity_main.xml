@@ -34,7 +34,8 @@
         app:srcCompat="@mipmap/ic_maiz_foreground" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnEMaiz"
+        android:onClick="enfermedades_Maiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
@@ -64,6 +65,7 @@
 
     <Button
         android:id="@+id/btnELimon"
+        android:onClick="enfermedades_Limon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
@@ -90,6 +92,7 @@
 
     <Button
         android:id="@+id/btnETrigo"
+        android:onClick="enfermedades_Trigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
@@ -117,6 +120,7 @@
 
     <Button
         android:id="@+id/btnEUva"
+        android:onClick="enfermedades_Uva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
