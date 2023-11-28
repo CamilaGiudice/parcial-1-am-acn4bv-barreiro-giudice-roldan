@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+
         // HERNAN   --- pasaje del botón enfUva a la Activity Enfermedades de Uva
         enfUva.setOnClickListener (new View.OnClickListener () {
             @Override
