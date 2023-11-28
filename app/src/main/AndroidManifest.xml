@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Parcial1amacn4bvbarreirogiudiceroldan"
         tools:targetApi="31">
         <activity
+            android:name=".Enfermedades_Maiz"
+            android:exported="false" />
+        <activity
+            android:name=".Enfermedades_Uva"
+            android:exported="false" />
+        <activity
+            android:name=".EnfermedadesUva"
+            android:exported="false"
+            android:label="@string/title_activity_enfermedades_uva"
+            android:theme="@style/Theme.Parcial1amacn4bvbarreirogiudiceroldan" />
+        <activity
+            android:name=".Enfermedades_Limon"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,12 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true" />
     </application>
 
 </manifest>
