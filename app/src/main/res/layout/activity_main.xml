@@ -44,8 +44,10 @@
         android:text="Enf Maíz"
         app:layout_constraintBottom_toTopOf="@+id/cerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/btnmaiz" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnEUva"
+        app:layout_constraintTop_toBottomOf="@+id/btnmaiz"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/btnlimon"
@@ -61,7 +63,7 @@
         app:srcCompat="@mipmap/ic_limon_foreground" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnELimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
@@ -87,7 +89,7 @@
         app:srcCompat="@mipmap/ic_trigo_foreground" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnETrigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
@@ -114,7 +116,7 @@
         app:srcCompat="@mipmap/ic_uva_foreground" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnEUva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -150,7 +152,7 @@
         android:text="@string/btn_ingresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.935" />
