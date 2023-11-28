@@ -29,8 +29,25 @@ public class LoginActivity extends AppCompatActivity {
     public void login(String email, String password){
         Log.i ("firebase", "email"+ email);
         Log.i ("firebase", "password"+ password);
-    }
+        mAuth.signInWithEmailAndPassword (email,password).addOnCompleteListener  // vamos a loguearnos con Firebase
+                (new OnCompleteListener<AuthResult> () {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+               if(task.isSuccessful ()) {
+                   Toast.makeText(getApplicationContext (),
+                           "Login exitoso",Toast.LENGTH_SHORT).show ();  // entro con usuario y contraseña
 
+                   Intent intent = new Intent(getApplicationContext (),
+                           MainActivity.class);
+                   startActivity (intent);
+                   finish();
+               }else {
+                   Toast.makeText(getApplicationContext (),
+                           "No pudo loguearse ",Toast.LENGTH_SHORT).show ();
+               }
+            }
+        });
+    }
   // Metodo para ejecutar el boton del login
     public void onLoginButtonClick(View view) {
         EditText emailInput = findViewById (R.id.editTextTextEmailAddress);
@@ -46,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        mAuth= FirebaseAuth.getInstance ();  // conectandonos con Firebase (inicializando el objeto)
     }
 }
 
