@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity (intent);
             }
         });
-        // HERNAN ----
+        // HERNAN ---- pasaje del botón enfTrigo a la Activity Enfermedades del Trigo
         enfTrigo.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity (intent);
             }
         });
-        // HERNAN   ---
+        // HERNAN   --- pasaje del botón enfUva a la Activity Enfermedades de Uva
         enfUva.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // HERNAN  -------
+        // HERNAN  -------pasaje del botón enfMaiz a la Activity Enfermedades de Maíz
 
         enfMaiz.setOnClickListener (new View.OnClickListener () {
             @Override
