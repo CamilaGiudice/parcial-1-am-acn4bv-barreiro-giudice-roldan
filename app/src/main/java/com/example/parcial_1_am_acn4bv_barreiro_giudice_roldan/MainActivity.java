@@ -43,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
     public ImageButton btnTrigo;
     public ImageButton btnUva;
 
-
-
     //Botones Ingresar y cerrar sesion
     private Button btnIngresar;
     private Button btnCerrarSesion;
