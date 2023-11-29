@@ -59,50 +59,33 @@ public class LoginActivity extends AppCompatActivity {
         // Login con Firebase
         this.login (email, password);
     }
+
+  TextView reg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         mAuth= FirebaseAuth.getInstance ();  // conectandonos con Firebase (inicializando el objeto)
+        reg= findViewById (R.id.txtRegister);
+        reg.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext (),RegisterActivity.class);
+                startActivity (intent);
+                finish ();
+            }
+        });
+
+
     }
 }
 
 
 
-    // this.login (getString(R.string.email_hernan_roldan_com_ar),  getString(R.string.password_1234));
-
-    /*
-        private EditText editTxtMail;
-        private EditText editTextPass;
-        private Button btnIniciarSesion;
-        private MainActivity mainActivity;
- */
 
 
 
-
-
-
-       /* mainActivity = new MainActivity();
-        //Linkeo
-        editTxtMail=findViewById(R.id.editTextTextEmailAddress);
-        editTextPass=findViewById(R.id.editTextTextPassword);
-        btnIniciarSesion=findViewById(R.id.btnlogin);
-
-        //Para loguearse : llamo al método de mi clase lógica
-        btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String email = editTxtMail.getText().toString();
-                String password = editTextPass.getText().toString();
-
-                //Llamar al método de iniciar sesion de mi clase lógica
-                mainActivity.login(email,password);
-
-            }
-        });
-*/
 
 
 
