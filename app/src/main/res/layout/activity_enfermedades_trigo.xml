@@ -38,21 +38,27 @@
 
     <Button
         android:id="@+id/btnAmain"
+        style="@style/Widget.Material3.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="40dp"
+        android:backgroundTint="#673AB7"
         android:text="@string/volver_a_cultivos2"
+        android:textColor="#F8F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnAuva"
+        style="@style/Widget.Material3.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="40dp"
+        android:backgroundTint="#673AB7"
         android:text="@string/ir_hacia_uva"
+        android:textColor="#F8F2F2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

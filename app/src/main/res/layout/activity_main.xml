@@ -26,7 +26,7 @@
         android:id="@+id/btnmaiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="184dp"
         android:contentDescription="@string/btn_maiz"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,13 +35,13 @@
 
     <Button
         android:id="@+id/btnEMaiz"
-        android:onClick="enfermedades_Maiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="44dp"
         android:backgroundTint="#063E08"
+        android:onClick="enfermedades_Maiz"
         android:text="Enf Maíz"
         app:layout_constraintBottom_toTopOf="@+id/cerrarSesion"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +57,7 @@
         android:contentDescription="@string/btn_limon"
         app:layout_constraintBottom_toTopOf="@+id/btnuva"
         app:layout_constraintEnd_toStartOf="@+id/btntrigo"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655"
@@ -82,7 +82,7 @@
         android:id="@+id/btntrigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="36dp"
         android:contentDescription="@string/btn_trigo"
         app:layout_constraintBottom_toTopOf="@+id/btnmaiz"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,9 +101,10 @@
         android:text="Enf Trigo"
         app:layout_constraintBottom_toTopOf="@+id/btnmaiz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnlimon"
-        app:layout_constraintTop_toBottomOf="@+id/btntrigo" />
+        app:layout_constraintTop_toBottomOf="@+id/btntrigo"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/btnuva"
