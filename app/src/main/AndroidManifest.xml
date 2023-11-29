@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Parcial1amacn4bvbarreirogiudiceroldan"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".Enfermedades_Maiz"
             android:exported="false" />
         <activity

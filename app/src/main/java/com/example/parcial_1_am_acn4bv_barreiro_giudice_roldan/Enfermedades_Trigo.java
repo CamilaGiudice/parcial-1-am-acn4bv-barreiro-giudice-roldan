@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 
 // CAMI ------
-public class Enfermedades_Trigo extends Activity {
+public class Enfermedades_Trigo extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAuva;
 
