@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 // HERNAN  - enfLimon y enfTrigo
         enfLimon= findViewById (R.id.btnELimon);
         enfTrigo= findViewById (R.id.btnETrigo);
-
  // CAMI  - enfUva y enfMaiz
         enfUva = findViewById (R.id.btnEUva);
         enfMaiz = findViewById (R.id.btnEMaiz);

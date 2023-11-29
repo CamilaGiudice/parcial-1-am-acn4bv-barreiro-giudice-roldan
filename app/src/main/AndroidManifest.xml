@@ -16,10 +16,10 @@
             android:name=".Enfermedades_Maiz"
             android:exported="false" />
         <activity
-            android:name=".Enfermedades_Uva"
+            android:name=".Enfermedades_Trigo"
             android:exported="false" />
         <activity
-            android:name=".EnfermedadesUva"
+            android:name=".Enfermedades_Uva"
             android:exported="false"
             android:label="@string/title_activity_enfermedades_uva"
             android:theme="@style/Theme.Parcial1amacn4bvbarreirogiudiceroldan" />
