@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_logoapp_round"
+        android:icon="@mipmap/ic_launcher_agro"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_logoapp_round"
+        android:roundIcon="@mipmap/ic_launcher_agro_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parcial1amacn4bvbarreirogiudiceroldan"
         tools:targetApi="31">
@@ -16,10 +16,10 @@
             android:name=".Enfermedades_Maiz"
             android:exported="false" />
         <activity
-            android:name=".Enfermedades_Uva"
+            android:name=".Enfermedades_Trigo"
             android:exported="false" />
         <activity
-            android:name=".EnfermedadesUva"
+            android:name=".Enfermedades_Uva"
             android:exported="false"
             android:label="@string/title_activity_enfermedades_uva"
             android:theme="@style/Theme.Parcial1amacn4bvbarreirogiudiceroldan" />
