@@ -187,5 +187,13 @@ La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya per
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="volver_a_cultivos">Volver a Cultivos</string>
+    <string name="ir_a_maiz">Ir a Maiz</string>
+    <string name="volver_a_cultivos2">Volver a cultivos</string>
+    <string name="ir_hacia_uva">Ir hacia Uva</string>
+    <string name="volver_a_cultivos3">Volver a Cultivos</string>
+    <string name="ir_a_trigo">Ir a Trigo</string>
+    <string name="volver_al_anterior">Volver al anterior</string>
+    <string name="volver_a_cultivos4">Volver a Cultivos</string>
 
 </resources>
