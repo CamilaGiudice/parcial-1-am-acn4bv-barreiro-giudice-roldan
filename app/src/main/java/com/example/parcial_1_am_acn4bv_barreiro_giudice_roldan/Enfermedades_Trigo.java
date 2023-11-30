@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Enfermedades_Trigo extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAuva;
-    private Button carbon,volador,negra,falsa,amarilla;
+    private Button carbon,volador,negra,falsa,amarilla, fusariosis;
 
 
     @Override
@@ -33,6 +33,7 @@ public class Enfermedades_Trigo extends AppCompatActivity {
        negra=findViewById (R.id.btnesnegra);
        falsa=findViewById (R.id.btnfalsa);
        amarilla=findViewById (R.id.btnamarilla);
+       fusariosis=findViewById(R.id.btnfusariosis);
 
         // onclick de todas las enfermedades de Trigo
         carbon.setOnClickListener (new View.OnClickListener () {
