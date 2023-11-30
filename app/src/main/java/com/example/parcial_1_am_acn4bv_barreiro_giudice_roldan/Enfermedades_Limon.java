@@ -58,7 +58,7 @@ public class Enfermedades_Limon extends AppCompatActivity {
             }
         });
 
-         mancha.setOnClickListener (new View.OnClickListener () {
+         mancha.setOnClickListener(new View.OnClickListener(){
              @Override
              public void onClick(View v) {
                  Intent intent = new Intent (Intent.ACTION_VIEW,Uri.parse
