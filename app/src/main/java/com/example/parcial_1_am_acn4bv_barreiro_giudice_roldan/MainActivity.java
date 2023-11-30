@@ -77,9 +77,10 @@ public class MainActivity extends AppCompatActivity {
         enfUva = findViewById (R.id.btnEUva);
         enfMaiz = findViewById (R.id.btnEMaiz);
 
-
+// Ingresar y logout de pantalla main
         btnIngresar =findViewById (R.id.ingresar);
         btnCerrarSesion = findViewById (R.id.cerrarSesion);
+
 
         // pasaje del boton enfLimon a la activity Enfermedades Limon
         enfLimon.setOnClickListener (new View.OnClickListener () {
@@ -212,59 +213,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-    //Login
-    public boolean login(String mail, String pass) {
-        for (UsuarioActivity usu : usuarios) {
+    // metodo cerrar sesion con mAuth (Firebase)
+        public void cerrarSesion(){
 
-            // Verifico que el usuario no esté bloqueado
-            if (!usu.isUsuarioBloqueado()) {
+       mAuth.signOut ();
+       Intent intent = new Intent(getApplicationContext (),LoginActivity.class);
+       startActivity (intent);
+       finish ();
 
-                // Verifico que exista el correo electrónico
-                if (usu.getMailUsuario().equals(mail) && mail!=null && mail!="") {
-
-                    // Verifico que la contraseña sea correcta
-                    if (usu.getPasswordUsuario().equals(pass) && pass!=null && pass!="") {
-
-                        // Guarda al usuario en logueado
-                        logueado = usu;
-
-
-                        mostrarMensaje("Inicio de sesion exitoso");
-                        actualizarVista();
-
-                        return true;
-
-                    } else {
-                        // La contraseña es incorrecta, suma los intentos fallidos y bloquea después de 3 intentos
-                        int intentosFallidos = usu.getIntentosFallidos() + 1;
-                        usu.setIntentosFallidos(intentosFallidos);
-
-                        if (intentosFallidos >= 3) {
-                            usu.setUsuarioBloqueado(true);
-                        }
-                    }
-                }
-            }
-
-        }
-        //Mostrar mensaje de error
-        mostrarMensaje("Inicio de sesion fallido");
-        return false;
-    }
-    // Metodo mostrar mensaje
-    private void mostrarMensaje(String mensaje){
-        Toast.makeText(this,mensaje,Toast.LENGTH_SHORT).show();
-    }
-    //Metodo actualizar vista
-    private void actualizarVista(){
-        //Mostrar el nombre
-        TextView nombreUsuario = findViewById(R.id.nombreUsuario);
-        nombreUsuario.setText("Usuario: "+logueado.getNombreUsuario());
-    }
-    //Cerrar Sesion
-
-    public void cerrarSesion(){
-        logueado = null;
     }
 
 }
