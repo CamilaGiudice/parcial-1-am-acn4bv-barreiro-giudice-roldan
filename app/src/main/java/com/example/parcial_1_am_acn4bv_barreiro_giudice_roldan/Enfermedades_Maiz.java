@@ -19,6 +19,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
     private Button cuarto,carbon,blanca,nitrogeno,roya, panojaloca;
 
 
+    // Decoradores
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
