@@ -41,6 +41,14 @@ public class Enfermedades_Maiz extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+
+        panojaloca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(""));
+                startActivity(intent);
+            }
+        });
         carbon.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
