@@ -24,6 +24,7 @@ public class Enfermedades_Limon extends AppCompatActivity{
         btnAmain=findViewById (R.id.btnAmain);
         btnAtrigo=findViewById (R.id.btnAtrigo);
 
+
 // Inicializacion de botones de enfermedades Limon
         antracnosis=findViewById (R.id.btenfantracnosis);
         acaros= findViewById (R.id.btLimonAcaros);
