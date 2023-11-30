@@ -38,10 +38,13 @@
         app:layout_constraintHorizontal_bias="0.624"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRioCuarto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_maiz"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F8F6F6"
         android:layout_marginTop="32dp"
         android:fontFamily="sans-serif"
         android:text="@string/mal_de_r_o_cuarto"
@@ -53,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enfermedades_Maiz" />
 
-    <Button
+   <Button
         android:id="@+id/btnAmain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,12 +77,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCarbon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/carb_n_de_la_espiga"
+        android:background="@drawable/button_maiz"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,12 +93,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRioCuarto" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnManchaBlanca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/mancha_blanca"
+        android:background="@drawable/button_maiz"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F8F6F6"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -101,12 +110,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCarbon" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNitrogeno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/deficiencia_de_nitr_geno"
+        android:background="@drawable/button_maiz"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,12 +126,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnManchaBlanca" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRoya"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
+        android:background="@drawable/button_maiz"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F8F6F6"
         android:text="Roya común del Maíz"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -128,10 +143,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnNitrogeno" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnpanojaloca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_maiz"
+        android:textColor="#F3EFEF"
+        android:textColorHint="#F8F6F6"
         android:layout_marginTop="76dp"
         android:fontFamily="sans-serif"
         android:text="@string/panojaloca"
