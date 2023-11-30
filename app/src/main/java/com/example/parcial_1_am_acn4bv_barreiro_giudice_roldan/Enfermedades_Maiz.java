@@ -45,7 +45,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
         panojaloca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(""));
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=5267"));
                 startActivity(intent);
             }
         });
