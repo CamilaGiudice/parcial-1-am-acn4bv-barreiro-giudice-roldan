@@ -28,6 +28,7 @@
 
     //Modals
     <string name="infoLimon">
+
         Descripción Limón:
     El limón es el fruto en baya del limonero, árbol de hoja perenne y espinoso de la familia de las rutáceas.
         Este árbol se desarrolla con éxito en los climas templados y tropicales, cultivándose actualmente en todo el mundo.
@@ -148,7 +149,7 @@ La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya per
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="next"> Next</string>
     <string name="previous">Previous</string>
 
     <string name="lorem_ipsum">
@@ -196,10 +197,33 @@ La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya per
     <string name="volver_al_anterior">Volver al anterior</string>
     <string name="volver_a_cultivos4">Volver a Cultivos</string>
     <string name="registrarse">Registrarse</string>
+
     <string name="carb_n_de_la_espiga">Carbón de la Espiga</string>
     <string name="mal_de_r_o_cuarto">Mal de Río Cuarto</string>
     <string name="enfermedades_maiz">ENFERMEDADES MAIZ</string>
     <string name="mancha_blanca">Mancha Blanca</string>
     <string name="deficiencia_de_nitr_geno">Deficiencia de Nitrógeno</string>
+     <string name="roya_com_n_del_ma_z">Roya común del Maíz</string>
+
+    <string name="espiga_negra">Espiga Negra</string>
+    <string name="carb_n_volador">Carbón Volador</string>
+    <string name="carb_n_cubierto_o_caries">Carbón Cubierto o Caries</string>
+
+    <string name="enfermedades_trigo">ENFERMEDADES TRIGO</string>
+    <string name="falsa_mancha_ocular">Falsa mancha ocular</string>
+    <string name="mancha_amarilla">Mancha amarilla</string>
+    <string name="acaro_de_la_vid">Acaro de la Vid</string>
+
+    <string name="enfermedades_uva">ENFERMEDADES UVA</string>
+    <string name="deficiencia_de_hierro">Deficiencia de Hierro</string>
+    <string name="enrollamiento_hoja">Enrollamiento Hoja</string>
+    <string name="enf_del_tronco_de_la_vid">Enf del Tronco de la Vid</string>
+    <string name="filoxera_de_la_vid">Filoxera de la Vid</string>
+    <string name="antracnosis">Antracnosis</string>
+    <string name="acaros_de_las_yemas">Acaros de las yemas</string>
+    <string name="cancrosis">Cancrosis</string>
+    <string name="mancha_negra">Mancha Negra</string>
+    <string name="clorosis">Clorosis</string>
+    <string name="enfermedades_limon">ENFERMEDADES LIMON</string>
 
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,11 +15,65 @@ public class Enfermedades_Maiz extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAuva;
 
+    // Declaro las variables con las que voy a trabajar
+    private Button cuarto,carbon,blanca,nitrogeno,roya;
+
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_enfermedades_maiz);
+
+
+        cuarto= findViewById (R.id.btnRioCuarto);
+        carbon= findViewById (R.id.btnCarbonEs);
+        blanca= findViewById (R.id.btnManchaBlanca);
+        nitrogeno=findViewById (R.id.btnNitrogeno);
+        roya= findViewById (R.id.btnRoya);
+
+        cuarto.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse ("https://herbariofitopatologia.agro.uba.ar/?page_id=136"));
+                startActivity (intent);
+            }
+        });
+        carbon.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW,
+                        Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=119"));
+                startActivity (intent);
+            }
+        });
+        blanca.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW,
+                        Uri.parse ("https://herbariofitopatologia.agro.uba.ar/?page_id=3877"));
+                startActivity (intent);
+            }
+        });
+
+        nitrogeno.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse ("https://herbariofitopatologia.agro.uba.ar/?page_id=19168"));
+                startActivity (intent);
+            }
+        });
+
+        roya.setOnClickListener (new View.OnClickListener () {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW,
+                        Uri.parse (" https://herbariofitopatologia.agro.uba.ar/?page_id=162"));
+                startActivity (intent);
+            }
+        });
 
         btnAmain= findViewById (R.id.btnAmain);
         btnAuva= findViewById (R.id.btnAuva);
