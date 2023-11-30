@@ -41,6 +41,15 @@ public class Enfermedades_Limon extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+
+        psorosis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+               startActivity(intent);
+            }
+        });
+
         acaros.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
