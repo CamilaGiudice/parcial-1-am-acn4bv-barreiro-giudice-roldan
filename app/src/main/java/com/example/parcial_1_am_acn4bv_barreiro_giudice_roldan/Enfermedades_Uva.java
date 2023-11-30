@@ -13,7 +13,7 @@ public class Enfermedades_Uva extends AppCompatActivity {
 
    public Button btnAmain;
     public Button btnAmaiz;
-    private Button acaros,hierro,rollo,tronco,filoxera;
+    private Button acaros,hierro,rollo,tronco,filoxera,botritis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
