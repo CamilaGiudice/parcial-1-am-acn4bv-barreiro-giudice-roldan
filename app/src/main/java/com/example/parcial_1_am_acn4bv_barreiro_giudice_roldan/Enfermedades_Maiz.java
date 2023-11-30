@@ -16,7 +16,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
     public Button btnAuva;
 
     // Declaro las variables con las que voy a trabajar
-    private Button cuarto,carbon,blanca,nitrogeno,roya;
+    private Button cuarto,carbon,blanca,nitrogeno,roya, panojaloca;
 
 
     @SuppressLint("WrongViewCast")
@@ -31,6 +31,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
         blanca= findViewById (R.id.btnManchaBlanca);
         nitrogeno=findViewById (R.id.btnNitrogeno);
         roya= findViewById (R.id.btnRoya);
+        panojaloca=findViewById(R.id.btnpanojaloca);
 
         cuarto.setOnClickListener (new View.OnClickListener () {
             @Override
