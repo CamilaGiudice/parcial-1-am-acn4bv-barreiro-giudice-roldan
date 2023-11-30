@@ -15,7 +15,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAuva;
 
-    // Declaro las variables con las que voy a trabajar
+    // Declaro como privados los atributos
     private Button cuarto,carbon,blanca,nitrogeno,roya, panojaloca;
 
 
