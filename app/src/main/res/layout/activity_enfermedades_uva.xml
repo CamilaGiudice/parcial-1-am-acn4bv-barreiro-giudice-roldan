@@ -123,11 +123,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btntronco" />
 
     <Button
-        android:id="@+id/btnfiloxera3"
+        android:id="@+id/btnbotritis"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
-        android:text="@string/filoxera_de_la_vid"
+        android:text="@string/botritis"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"

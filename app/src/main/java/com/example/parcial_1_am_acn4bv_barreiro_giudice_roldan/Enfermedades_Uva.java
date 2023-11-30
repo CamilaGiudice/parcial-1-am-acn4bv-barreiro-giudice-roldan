@@ -29,6 +29,7 @@ public class Enfermedades_Uva extends AppCompatActivity {
         rollo= findViewById (R.id.btnrollo);
         tronco=findViewById (R.id.btntronco);
         filoxera=findViewById (R.id.btnfiloxera);
+        botritis=findViewById(R.id.btnbotritis);
 
         acaros.setOnClickListener (new View.OnClickListener () {
             @Override
