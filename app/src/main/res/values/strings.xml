@@ -29,7 +29,7 @@
     //Modals
     <string name="infoLimon">
 
-        Descripción Limón:
+        Descripción general:
     El limón es el fruto en baya del limonero, árbol de hoja perenne y espinoso de la familia de las rutáceas.
         Este árbol se desarrolla con éxito en los climas templados y tropicales, cultivándose actualmente en todo el mundo.
         El limonero, originario de China o India, se cultiva en Asia desde hace más de 2.500 años
@@ -45,7 +45,7 @@
         con margen aserrado-dentado.
 "</string>
     <string name="infoMaiz">
-      Descripción Maíz :
+     Descripción general:
 
     El maíz, pertenece a la familia de las Poáceas o Gramíneas y es uno de los granos alimenticios más antiguos
         que se conocen, es una planta domesticada y altamente productiva que no crece en forma salvaje
@@ -68,8 +68,8 @@
 
     </string>
     <string name="infoUva">
-        Descripción Vid y Uva de Mesa:
-    Planta vivaz y trepadora de la familia de las vitáceas, con tronco retorcido, vástagos muy largos,
+        Descripción general:
+    Es una planta vivaz y trepadora de la familia de las vitáceas, con tronco retorcido, vástagos muy largos,
         flexibles y nudosos, cuyo fruto es la uva.
         La vid es una planta leñosa trepadora; una liana que bajo su forma cultivada presenta una estructura
         permanente de madera vieja formando un esqueleto de soporte más o menos regular.
@@ -104,7 +104,7 @@ La superficie de vid de la República Argentina registrada es de más de 200.000
 
     </string>
     <string name="infoTrigo">
-        Descripción Trigo:
+       Descripción general:
     El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto.
         Su altura es variable, va desde treinta centímetros hasta un metro y medio de largo.
         El tallo, recto, cilíndrico, da unas hojas largas y finas que terminan en forma de lanza,
@@ -204,6 +204,7 @@ La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya per
     <string name="mancha_blanca">Mancha Blanca</string>
     <string name="deficiencia_de_nitr_geno">Deficiencia de Nitrógeno</string>
      <string name="roya_com_n_del_ma_z">Roya común del Maíz</string>
+    <string name="panojaloca">Panoja Loca</string>
 
     <string name="espiga_negra">Espiga Negra</string>
     <string name="carb_n_volador">Carbón Volador</string>
@@ -213,6 +214,7 @@ La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya per
     <string name="falsa_mancha_ocular">Falsa mancha ocular</string>
     <string name="mancha_amarilla">Mancha amarilla</string>
     <string name="acaro_de_la_vid">Acaro de la Vid</string>
+    <string name="fusariosis">Fusariosis de la espiga</string>
 
     <string name="enfermedades_uva">ENFERMEDADES UVA</string>
     <string name="deficiencia_de_hierro">Deficiencia de Hierro</string>
@@ -225,5 +227,8 @@ La cosecha, también llamada  siega, comienza cuando los tallos del trigo ya per
     <string name="mancha_negra">Mancha Negra</string>
     <string name="clorosis">Clorosis</string>
     <string name="enfermedades_limon">ENFERMEDADES LIMON</string>
+    <string name="botritis">Botritis (Podredumbre gris)</string>
+    <string name="psorosis">Citrus Psorosis Virus (CPsV)</string>
+
 
 </resources>

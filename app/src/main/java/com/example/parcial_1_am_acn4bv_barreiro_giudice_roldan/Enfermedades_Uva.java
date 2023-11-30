@@ -13,7 +13,7 @@ public class Enfermedades_Uva extends AppCompatActivity {
 
    public Button btnAmain;
     public Button btnAmaiz;
-    private Button acaros,hierro,rollo,tronco,filoxera;
+    private Button acaros,hierro,rollo,tronco,filoxera,botritis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class Enfermedades_Uva extends AppCompatActivity {
         rollo= findViewById (R.id.btnrollo);
         tronco=findViewById (R.id.btntronco);
         filoxera=findViewById (R.id.btnfiloxera);
+        botritis=findViewById(R.id.btnbotritis);
 
         acaros.setOnClickListener (new View.OnClickListener () {
             @Override
@@ -38,6 +39,14 @@ public class Enfermedades_Uva extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+        botritis.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=977"));
+                startActivity(intent);
+            }
+        });
+
         hierro.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
