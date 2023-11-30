@@ -70,74 +70,92 @@
         app:strokeColor="#673AB7"
         tools:visibility="visible" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btncarboncub"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
+        android:background="@drawable/button_trigo"
         android:text="@string/carb_n_cubierto_o_caries"
         android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enfermedades_Trigo" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnvolador"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@drawable/button_trigo"
         android:text="@string/carb_n_volador"
         android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btncarboncub" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnesnegra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
+        android:background="@drawable/button_trigo"
         android:text="@string/espiga_negra"
+        android:textColor="#101010"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnvolador" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnfalsa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/button_trigo"
         android:text="@string/falsa_mancha_ocular"
+        android:textColor="#050505"
+        android:textColorHint="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnesnegra" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnamarilla"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
+        android:background="@drawable/button_trigo"
         android:text="@string/mancha_amarilla"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnfalsa" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnfusariosis"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
+        android:background="@drawable/button_trigo"
         android:text="@string/fusariosis"
+        android:textColor="#070707"
+        android:textColorHint="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

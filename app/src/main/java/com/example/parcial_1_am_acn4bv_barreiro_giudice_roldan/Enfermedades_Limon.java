@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 public class Enfermedades_Limon extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAtrigo;
-    private Button antracnosis, acaros,cancrosis,mancha,clorosis;
+    private Button antracnosis, acaros,cancrosis,mancha,clorosis,psorosis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class Enfermedades_Limon extends AppCompatActivity {
         cancrosis=findViewById (R.id.btnLicancrosis);
         mancha= findViewById (R.id.btnLimancha);
         clorosis=findViewById (R.id.btnLiclorosis);
+        psorosis=findViewById(R.id.btnpsorosis);
 
         // onclick de todas las enfermedades
 
@@ -40,6 +41,15 @@ public class Enfermedades_Limon extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+
+        psorosis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=7241"));
+               startActivity(intent);
+            }
+        });
+
         acaros.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
