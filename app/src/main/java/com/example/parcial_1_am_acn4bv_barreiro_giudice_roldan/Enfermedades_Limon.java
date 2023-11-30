@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 public class Enfermedades_Limon extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAtrigo;
-    private Button antracnosis, acaros,cancrosis,mancha,clorosis;
+    private Button antracnosis, acaros,cancrosis,mancha,clorosis,psorosis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class Enfermedades_Limon extends AppCompatActivity {
         cancrosis=findViewById (R.id.btnLicancrosis);
         mancha= findViewById (R.id.btnLimancha);
         clorosis=findViewById (R.id.btnLiclorosis);
+        psorosis=findViewById(R.id.btnpsorosis);
 
         // onclick de todas las enfermedades
 
