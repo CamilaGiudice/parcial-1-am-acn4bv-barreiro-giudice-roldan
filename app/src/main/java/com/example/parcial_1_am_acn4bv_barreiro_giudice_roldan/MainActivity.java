@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
 
        mAuth.signOut ();
        Toast.makeText(getApplicationContext (),"Se ha cerrado sesión correctamente",
-               Toast.LENGTH_SHORT).show ();
+               Toast.LENGTH_LONG).show ();
        Intent intent = new Intent(getApplicationContext (),LoginActivity.class);
        startActivity (intent);
        finish ();
