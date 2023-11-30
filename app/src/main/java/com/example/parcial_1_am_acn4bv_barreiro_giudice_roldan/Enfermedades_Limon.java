@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 public class Enfermedades_Limon extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAtrigo;
-    private Button antracnosis, acaros,cancrosis,mancha,clorosis,psorosis;
+    private Button antracnosis, acaros,cancrosis,mancha,clorosis, psorosis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
