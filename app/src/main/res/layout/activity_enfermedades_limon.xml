@@ -67,6 +67,7 @@
         android:fontFamily="sans-serif-black"
         android:maxWidth="320dp"
         android:text=" Antracnosis "
+        android:textAlignment="center"
         android:textColorHighlight="#559C04"
         android:textSize="20sp"
         app:iconTint="#559C04"
