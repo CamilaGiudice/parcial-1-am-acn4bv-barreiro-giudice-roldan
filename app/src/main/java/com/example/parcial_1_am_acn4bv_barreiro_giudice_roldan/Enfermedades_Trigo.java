@@ -44,6 +44,16 @@ public class Enfermedades_Trigo extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+
+        fusariosis.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(""));
+                startActivity(intent);
+            }
+        });
+
         volador.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
