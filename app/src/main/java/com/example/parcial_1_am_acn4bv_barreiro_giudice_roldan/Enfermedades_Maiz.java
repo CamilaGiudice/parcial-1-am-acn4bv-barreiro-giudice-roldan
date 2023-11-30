@@ -27,7 +27,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
 
 
         cuarto= findViewById (R.id.btnRioCuarto);
-        carbon= findViewById (R.id.btnCarbonEs);
+        carbon= findViewById (R.id.btnCarbon);
         blanca= findViewById (R.id.btnManchaBlanca);
         nitrogeno=findViewById (R.id.btnNitrogeno);
         roya= findViewById (R.id.btnRoya);
