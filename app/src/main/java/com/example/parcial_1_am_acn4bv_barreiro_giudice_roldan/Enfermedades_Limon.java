@@ -10,7 +10,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 // HERNAN  ------------
-public class Enfermedades_Limon extends AppCompatActivity {
+public class Enfermedades_Limon extends AppCompatActivity{
+    // Atributos públicos, botones de los cultivos
     public Button btnAmain;
     public Button btnAtrigo;
     private Button antracnosis, acaros,cancrosis,mancha,clorosis, psorosis;
