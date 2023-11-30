@@ -49,7 +49,7 @@ public class Enfermedades_Trigo extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(""));
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=222"));
                 startActivity(intent);
             }
         });
