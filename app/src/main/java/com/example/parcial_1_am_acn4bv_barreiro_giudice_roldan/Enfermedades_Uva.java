@@ -39,7 +39,12 @@ public class Enfermedades_Uva extends AppCompatActivity {
                 startActivity (intent);
             }
         });
-
+        botritis.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=977"));
+            }
+        });
 
         hierro.setOnClickListener (new View.OnClickListener () {
             @Override
