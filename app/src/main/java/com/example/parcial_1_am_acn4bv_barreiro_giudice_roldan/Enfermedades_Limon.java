@@ -17,7 +17,7 @@ public class Enfermedades_Limon extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate (savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView (R.layout.activity_enfermedades_limon);
 
         btnAmain=findViewById (R.id.btnAmain);
