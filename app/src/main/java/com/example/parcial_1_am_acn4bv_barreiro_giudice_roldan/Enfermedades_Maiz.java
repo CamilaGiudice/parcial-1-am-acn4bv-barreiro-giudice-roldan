@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-// HERNAN
 public class Enfermedades_Maiz extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAuva;
