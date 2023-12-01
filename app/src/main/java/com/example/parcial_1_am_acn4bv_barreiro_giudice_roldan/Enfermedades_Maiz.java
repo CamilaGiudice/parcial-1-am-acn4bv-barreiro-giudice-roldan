@@ -25,7 +25,6 @@ public class Enfermedades_Maiz extends AppCompatActivity {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_enfermedades_maiz);
 
-
         cuarto= findViewById (R.id.btnRioCuarto);
         carbon= findViewById (R.id.btnCarbon);
         blanca= findViewById (R.id.btnManchaBlanca);
