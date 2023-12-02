@@ -80,14 +80,14 @@ public class Enfermedades_Limon extends AppCompatActivity{
             }
         });
 
-         clorosis.setOnClickListener(new View.OnClickListener () {
+        clorosis.setOnClickListener(new View.OnClickListener () {
 
-             public void onClick(View v) {
-                 Intent intent =new Intent (Intent.ACTION_VIEW,Uri.parse
-                         ("https://herbariofitopatologia.agro.uba.ar/?page_id=2825"));
-                 startActivity (intent);
-             }
-         });
+            public void onClick(View v) {
+                Intent intent =new Intent (Intent.ACTION_VIEW,Uri.parse
+                        ("https://herbariofitopatologia.agro.uba.ar/?page_id=2825"));
+                startActivity (intent);
+            }
+        });
 
         btnAmain.setOnClickListener (new View.OnClickListener () {
             @Override
