@@ -53,7 +53,6 @@ public class Enfermedades_Limon extends AppCompatActivity{
             }
         });
 
-
         acaros.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
