@@ -61,6 +61,7 @@ public class Enfermedades_Limon extends AppCompatActivity{
                 startActivity (intent);
             }
         });
+
         cancrosis.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
@@ -70,14 +71,15 @@ public class Enfermedades_Limon extends AppCompatActivity{
             }
         });
 
-         mancha.setOnClickListener(new View.OnClickListener(){
-             @Override
-             public void onClick(View v) {
-                 Intent intent = new Intent (Intent.ACTION_VIEW,Uri.parse
-                         (" https://herbariofitopatologia.agro.uba.ar/?page_id=302 "));
-                 startActivity(intent);
-             }
-         });
+        mancha.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW,Uri.parse
+                        (" https://herbariofitopatologia.agro.uba.ar/?page_id=302 "));
+                startActivity(intent);
+            }
+        });
+
          clorosis.setOnClickListener(new View.OnClickListener () {
 
              public void onClick(View v) {
