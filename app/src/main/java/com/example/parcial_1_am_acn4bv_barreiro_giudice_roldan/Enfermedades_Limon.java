@@ -29,6 +29,7 @@ public class Enfermedades_Limon extends AppCompatActivity{
         antracnosis=findViewById (R.id.btenfantracnosis);
         acaros= findViewById (R.id.btLimonAcaros);
         cancrosis=findViewById (R.id.btnLicancrosis);
+        mancha= findViewById(R.id.btnLimancha);
 
 
         // Evento onClick para todas las enfermedades
