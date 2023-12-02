@@ -33,7 +33,7 @@ public class Enfermedades_Limon extends AppCompatActivity{
         clorosis=findViewById (R.id.btnLiclorosis);
         psorosis=findViewById(R.id.btnpsorosis);
 
-        // onclick de todas las enfermedades
+        // Evento onClick para todas las enfermedades
 
         antracnosis.setOnClickListener (new View.OnClickListener () {
             @Override
