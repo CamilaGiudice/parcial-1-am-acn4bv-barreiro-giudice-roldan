@@ -16,11 +16,17 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class RegisterActivity extends AppCompatActivity {
 private EditText email, password;
 private Button register;
 private FirebaseAuth mAuth;
+private FirebaseFirestore firestore;  // Es la que se encarga de conectarse y manipular la base de datos
+private DocumentReference ref;  // Es para ubicarnos en que lugar de la base de datos me estoy posicionando
+
+
 
 
     @SuppressLint("MissingInflatedId")
