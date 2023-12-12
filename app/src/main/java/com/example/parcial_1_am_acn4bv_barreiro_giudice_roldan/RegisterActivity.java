@@ -57,7 +57,7 @@ private DocumentReference ref;  // Es para ubicarnos en que lugar de la base de 
         // inicialización de la base de datos (de documentos o coleccion)
         ref= firestore.collection ("usuarios").document (); // Inicializando nuestra tabla usuarios o
         // coleccion de usuarios - aqui vamos a guardar todos los usuarios cada vez que registremos uno nuevo.
-
+        firestore= FirebaseFirestore.getInstance ();  // Inicializacion de Firestore
 
 
 
