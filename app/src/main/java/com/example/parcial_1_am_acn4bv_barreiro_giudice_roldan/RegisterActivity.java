@@ -13,14 +13,26 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
-private EditText email, password;
+private EditText email, password,nombre;
+
 private Button register;
 private FirebaseAuth mAuth;
+private FirebaseFirestore firestore;  // Es la que se encarga de conectarse y manipular la base de datos
+private DocumentReference ref;  // Es para ubicarnos en que lugar de la base de datos me estoy posicionando
+
+
 
 
     @SuppressLint("MissingInflatedId")
@@ -37,6 +49,17 @@ private FirebaseAuth mAuth;
         password= findViewById (R.id.etRegpassword);
         // Inicialización de botón de registro
         register= findViewById (R.id.btRegistrar);
+
+        // inicializacion de nombre para agregar en la base de datos
+
+        nombre= findViewById (R.id.etRegNomApellido);
+        // inicialización de la base de datos (de documentos o coleccion)
+        ref= firestore.collection ("usuarios").document (); // Inicializando nuestra tabla usuarios o
+        // coleccion de usuarios - aqui vamos a guardar todos los usuarios cada vez que registremos uno nuevo.
+
+
+
+
 
         // Evento onClick de Boton Registro
         register.setOnClickListener (new View.OnClickListener () {
@@ -57,11 +80,7 @@ private FirebaseAuth mAuth;
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText (getApplicationContext (), "Ha registrado su usuario",
-                                    Toast.LENGTH_SHORT).show();
-                            Intent intent= new Intent (RegisterActivity.this,LoginActivity.class);
-                            startActivity (intent);
-                            finish();
+                            guardarInfo();
                         }
                         else{
                             Toast.makeText (getApplicationContext (), "No se pudo registrar su usuario" + task.toString (),
@@ -74,6 +93,36 @@ private FirebaseAuth mAuth;
             }
         });
 
+    }
+
+    private void guardarInfo() {
+        ref.get ().addOnSuccessListener (new OnSuccessListener<DocumentSnapshot> () {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if(documentSnapshot.exists ()){
+                    Toast.makeText (getApplicationContext (), "Lo sentimos, el usuario ya existe",
+                            Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Map<String,Object> regUser = new HashMap<> (); // Objeto intermedio que me prepara los datos
+                    // de manera correcta para poderlos subir en el formato adecuado a Firestore
+
+                    regUser.put ("Nombre y Apellido", nombre.getText ().toString ()); // cargamos los nombres y apellidos
+                    regUser.put ("Email", email.getText ().toString ());
+                    regUser.put ("Contraseña", password.getText ().toString ());
+
+
+                    Toast.makeText (getApplicationContext (), "Ha registrado su usuario",
+                            Toast.LENGTH_SHORT).show();
+                    Intent intent= new Intent (RegisterActivity.this,LoginActivity.class);
+                    startActivity (intent);
+                    finish();
+                }
+            }
+        });
+
 
     }
 }
+
+
