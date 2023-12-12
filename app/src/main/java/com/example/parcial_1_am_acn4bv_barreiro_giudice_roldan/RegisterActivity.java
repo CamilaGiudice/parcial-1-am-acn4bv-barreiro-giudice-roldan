@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -111,12 +112,24 @@ private DocumentReference ref;  // Es para ubicarnos en que lugar de la base de 
                     regUser.put ("Email", email.getText ().toString ());
                     regUser.put ("Contraseña", password.getText ().toString ());
 
+                    firestore.collection ("usuarios").add (regUser).addOnSuccessListener (new OnSuccessListener<DocumentReference> () {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
 
-                    Toast.makeText (getApplicationContext (), "Ha registrado su usuario",
-                            Toast.LENGTH_SHORT).show();
-                    Intent intent= new Intent (RegisterActivity.this,LoginActivity.class);
-                    startActivity (intent);
-                    finish();
+                            Toast.makeText (getApplicationContext (), "Ha registrado su usuario",
+                                    Toast.LENGTH_SHORT).show();
+                            Intent intent= new Intent (RegisterActivity.this,LoginActivity.class);
+                            startActivity (intent);
+                            finish();
+                        }
+                    }).addOnFailureListener (new OnFailureListener () {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText (getApplicationContext (), "No se pudo registrar el usuario, ocurrió un error x base de datos",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
                 }
             }
         });
