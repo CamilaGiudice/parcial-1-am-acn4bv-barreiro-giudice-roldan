@@ -55,12 +55,10 @@ private DocumentReference ref;  // Es para ubicarnos en que lugar de la base de 
 
         nombre= findViewById (R.id.etRegNomApellido);
         // inicialización de la base de datos (de documentos o coleccion)
+
+        firestore= FirebaseFirestore.getInstance ();  // Inicializacion de Firestore
         ref= firestore.collection ("usuarios").document (); // Inicializando nuestra tabla usuarios o
         // coleccion de usuarios - aqui vamos a guardar todos los usuarios cada vez que registremos uno nuevo.
-        firestore= FirebaseFirestore.getInstance ();  // Inicializacion de Firestore
-
-
-
 
         // Evento onClick de Boton Registro
         register.setOnClickListener (new View.OnClickListener () {
