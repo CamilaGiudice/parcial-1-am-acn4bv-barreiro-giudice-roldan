@@ -10,21 +10,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-// HERNAN
 public class Enfermedades_Maiz extends AppCompatActivity {
     public Button btnAmain;
     public Button btnAuva;
 
-    // Declaro las variables con las que voy a trabajar
+    // Declaro como privados los atributos
     private Button cuarto,carbon,blanca,nitrogeno,roya, panojaloca;
 
 
+    // Decoradores
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_enfermedades_maiz);
-
 
         cuarto= findViewById (R.id.btnRioCuarto);
         carbon= findViewById (R.id.btnCarbon);

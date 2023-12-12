@@ -9,44 +9,47 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-// HERNAN  ------------
-public class Enfermedades_Limon extends AppCompatActivity {
+public class Enfermedades_Limon extends AppCompatActivity{
+    // Atributos públicos, botones de los cultivos
     public Button btnAmain;
     public Button btnAtrigo;
-    private Button antracnosis, acaros,cancrosis,mancha,clorosis,psorosis;
+    private Button antracnosis, acaros,cancrosis,mancha,clorosis, psorosis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate (savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView (R.layout.activity_enfermedades_limon);
 
         btnAmain=findViewById (R.id.btnAmain);
         btnAtrigo=findViewById (R.id.btnAtrigo);
 
+
 // Inicializacion de botones de enfermedades Limon
+        antracnosis=findViewById (R.id.btenfantracnosis);
         antracnosis=findViewById (R.id.btenfantracnosis);
         acaros= findViewById (R.id.btLimonAcaros);
         cancrosis=findViewById (R.id.btnLicancrosis);
-        mancha= findViewById (R.id.btnLimancha);
+        mancha= findViewById(R.id.btnLimancha);
         clorosis=findViewById (R.id.btnLiclorosis);
         psorosis=findViewById(R.id.btnpsorosis);
 
-        // onclick de todas las enfermedades
+        // Evento onClick para todas las enfermedades
 
         antracnosis.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (Intent.ACTION_VIEW, Uri.parse
                         ("https://herbariofitopatologia.agro.uba.ar/?page_id=280"));
-                startActivity (intent);
+                startActivity(intent);
             }
         });
+
 
         psorosis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=7241"));
-               startActivity(intent);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=7241"));
+                startActivity(intent);
             }
         });
 
@@ -58,6 +61,7 @@ public class Enfermedades_Limon extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+
         cancrosis.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
@@ -66,22 +70,24 @@ public class Enfermedades_Limon extends AppCompatActivity {
                 startActivity (intent);
             }
         });
-         mancha.setOnClickListener (new View.OnClickListener () {
-             @Override
-             public void onClick(View v) {
-                 Intent intent = new Intent (Intent.ACTION_VIEW,Uri.parse
-                         (" https://herbariofitopatologia.agro.uba.ar/?page_id=302 "));
-                 startActivity (intent);
-             }
-         });
-         clorosis.setOnClickListener (new View.OnClickListener () {
-             @Override
-             public void onClick(View v) {
-                 Intent intent =new Intent (Intent.ACTION_VIEW,Uri.parse
-                         ("https://herbariofitopatologia.agro.uba.ar/?page_id=2825"));
-                 startActivity (intent);
-             }
-         });
+
+        mancha.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW,Uri.parse
+                        (" https://herbariofitopatologia.agro.uba.ar/?page_id=302 "));
+                startActivity(intent);
+            }
+        });
+
+        clorosis.setOnClickListener(new View.OnClickListener () {
+
+            public void onClick(View v) {
+                Intent intent =new Intent (Intent.ACTION_VIEW,Uri.parse
+                        ("https://herbariofitopatologia.agro.uba.ar/?page_id=2825"));
+                startActivity (intent);
+            }
+        });
 
         btnAmain.setOnClickListener (new View.OnClickListener () {
             @Override
