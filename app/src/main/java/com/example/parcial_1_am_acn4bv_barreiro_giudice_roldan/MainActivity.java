@@ -82,6 +82,13 @@ public class MainActivity extends AppCompatActivity {
         btnCerrarSesion = findViewById (R.id.cerrarSesion);
 
 
+        // Recuperar los datos del Intent
+        Intent intent = getIntent ();
+        String nombre = intent.getStringExtra ("Nombre");
+
+        Toast.makeText (getApplicationContext (), "Bienvenido " + nombre, Toast.LENGTH_LONG).show ();
+
+
         // pasaje del boton enfLimon a la activity Enfermedades Limon
         enfLimon.setOnClickListener (new View.OnClickListener () {
             @Override

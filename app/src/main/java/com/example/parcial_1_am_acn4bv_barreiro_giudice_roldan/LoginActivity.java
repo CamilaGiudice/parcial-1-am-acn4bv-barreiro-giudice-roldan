@@ -43,8 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                if(task.isSuccessful ()) {
-                   Toast.makeText(getApplicationContext (),
-                           "Login exitoso",Toast.LENGTH_SHORT).show ();  // entro con usuario y contraseña
+
 
                    // Verificación de email en base de datos Firestore //
 
@@ -56,26 +55,32 @@ public class LoginActivity extends AppCompatActivity {
                                         for(QueryDocumentSnapshot doc: task.getResult ()){
                                             String mail=doc.getString ("Email") ; // email de Firestore
                                             String pass=doc.getString ("Contraseña");
+                                            String nombre= doc.getString ("Nombre y Apellido");
 
                                             if(mail.equalsIgnoreCase (email) && pass.equalsIgnoreCase (password)){
                                                 Intent intent = new Intent(getApplicationContext (),
                                                         MainActivity.class);
-                                                startActivity (intent);
+
                                                 Toast.makeText(getApplicationContext (),
                                                         " Login exitoso ",Toast.LENGTH_SHORT).show ();
-                                                finish();
 
+                                                // Pasar al MainActivity el Nombre y Apellido del usuario que se logueo correctamente
+
+                                                intent.putExtra (" Nombre ", nombre);  // el intent se encarga de capturar el dato del nombre y apellido
+                                                // del que se loguea
+                                                startActivity (intent);  // paso el objeto intent con el dato capturado.
+
+                                                finish();
                                             }
 
                                             else{
                                                 Toast.makeText(getApplicationContext (),
-                                                        "Email o contraseña inválidos  ",Toast.LENGTH_SHORT).show ();
+                                                        " Email o contraseña inválidos ",Toast.LENGTH_SHORT).show ();
                                             }
                                         }
                                     }
                                 }
                             });
-
 
                }else {
                    Toast.makeText(getApplicationContext (),
