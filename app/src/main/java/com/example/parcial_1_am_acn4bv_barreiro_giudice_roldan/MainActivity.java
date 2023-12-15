@@ -82,15 +82,24 @@ public class MainActivity extends AppCompatActivity {
         btnCerrarSesion = findViewById (R.id.cerrarSesion);
 
 
-        // Recuperar los datos del Intent
-        Intent intent = getIntent ();
-        String nombre = intent.getStringExtra ("Nombre");
+        // Recuperar los datos del Intent  dentro del OnCrete
 
-        Toast.makeText (getApplicationContext (), "Bienvenido " + nombre, Toast.LENGTH_LONG).show ();
+        String nombre = getIntent ().getStringExtra ("nombre");   // obteniendo el dato del Intent que no
+        // lo obteníamos directamente con el objeto.
+        if(nombre == null){
+            System.out.println ("No existe un usuario logueado");
+        }
+        else{
+            Toast.makeText (getApplicationContext (), "Bienvenido " + nombre, Toast.LENGTH_LONG).show ();
+        }
+
+
 
 
         // pasaje del boton enfLimon a la activity Enfermedades Limon
         enfLimon.setOnClickListener (new View.OnClickListener () {
+
+
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (getApplicationContext (),Enfermedades_Limon.class);

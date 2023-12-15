@@ -61,12 +61,12 @@ public class LoginActivity extends AppCompatActivity {
                                                 Intent intent = new Intent(getApplicationContext (),
                                                         MainActivity.class);
 
-                                                Toast.makeText(getApplicationContext (),
-                                                        " Login exitoso ",Toast.LENGTH_SHORT).show ();
 
                                                 // Pasar al MainActivity el Nombre y Apellido del usuario que se logueo correctamente
 
-                                                intent.putExtra (" Nombre ", nombre);  // el intent se encarga de capturar el dato del nombre y apellido
+                                                System.out.println (nombre);
+
+                                                intent.putExtra ("nombre", nombre);  // el intent se encarga de capturar el dato del nombre y apellido
                                                 // del que se loguea
                                                 startActivity (intent);  // paso el objeto intent con el dato capturado.
 
