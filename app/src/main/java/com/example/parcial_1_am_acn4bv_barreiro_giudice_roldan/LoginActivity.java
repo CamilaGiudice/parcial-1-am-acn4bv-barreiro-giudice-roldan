@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,10 @@ import java.util.List;
 public class LoginActivity extends AppCompatActivity {
     // Agrego una instancia del Firebase para loguearse
     private FirebaseAuth mAuth;
+    private FirebaseFirestore firestore;
+    private DocumentReference ref;
+
+
 
     public void login(String email, String password){
         Log.i ("firebase", "email"+ email);
@@ -36,6 +42,10 @@ public class LoginActivity extends AppCompatActivity {
                if(task.isSuccessful ()) {
                    Toast.makeText(getApplicationContext (),
                            "Login exitoso",Toast.LENGTH_SHORT).show ();  // entro con usuario y contraseña
+
+                   // Verificación de email en base de datos Firestore
+
+
 
                    Intent intent = new Intent(getApplicationContext (),
                            MainActivity.class);
@@ -68,6 +78,12 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         mAuth= FirebaseAuth.getInstance ();  // conectandonos con Firebase (inicializando el objeto)
         reg= findViewById (R.id.txtRegister);
+
+        // inicializacion de la variables de la base de datos
+
+        firestore = FirebaseFirestore.getInstance ();
+        ref = firestore.collection ("usuarios").document ();
+
         reg.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
