@@ -43,8 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                if(task.isSuccessful ()) {
-                   Toast.makeText(getApplicationContext (),
-                           "Login exitoso",Toast.LENGTH_SHORT).show ();  // entro con usuario y contraseña
+
 
                    // Verificación de email en base de datos Firestore //
 
@@ -69,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                             else{
                                                 Toast.makeText(getApplicationContext (),
-                                                        "Email o contraseña inválidos  ",Toast.LENGTH_SHORT).show ();
+                                                        "Email o contraseña inválidos ",Toast.LENGTH_SHORT).show ();
                                             }
                                         }
                                     }
