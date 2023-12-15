@@ -20,6 +20,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore firestore;
     private DocumentReference ref;
+
 
 
 
@@ -43,14 +46,37 @@ public class LoginActivity extends AppCompatActivity {
                    Toast.makeText(getApplicationContext (),
                            "Login exitoso",Toast.LENGTH_SHORT).show ();  // entro con usuario y contraseña
 
-                   // Verificación de email en base de datos Firestore
+                   // Verificación de email en base de datos Firestore //
+
+                    firestore.collection ("usuarios").get ().addOnCompleteListener
+                            (new OnCompleteListener<QuerySnapshot> () {
+                                @Override
+                                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                    if(task.isSuccessful ()){
+                                        for(QueryDocumentSnapshot doc: task.getResult ()){
+                                            String mail=doc.getString ("Email") ; // email de Firestore
+                                            String pass=doc.getString ("Contraseña");
+
+                                            if(mail.equalsIgnoreCase (email) && pass.equalsIgnoreCase (password)){
+                                                Intent intent = new Intent(getApplicationContext (),
+                                                        MainActivity.class);
+                                                startActivity (intent);
+                                                Toast.makeText(getApplicationContext (),
+                                                        " Login exitoso ",Toast.LENGTH_SHORT).show ();
+                                                finish();
+
+                                            }
+
+                                            else{
+                                                Toast.makeText(getApplicationContext (),
+                                                        "Email o contraseña inválidos  ",Toast.LENGTH_SHORT).show ();
+                                            }
+                                        }
+                                    }
+                                }
+                            });
 
 
-
-                   Intent intent = new Intent(getApplicationContext (),
-                           MainActivity.class);
-                   startActivity (intent);
-                   finish();
                }else {
                    Toast.makeText(getApplicationContext (),
                            "No pudo loguearse ",Toast.LENGTH_SHORT).show ();
