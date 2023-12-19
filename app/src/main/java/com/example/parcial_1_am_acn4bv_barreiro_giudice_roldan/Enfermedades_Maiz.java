@@ -33,7 +33,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
         panojaloca=findViewById(R.id.btnpanojaloca);
         cuarto.setOnClickListener (new View.OnClickListener () {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse ("https://herbariofitopatologia.agro.uba.ar/?page_id=136"));
                 startActivity (intent);
