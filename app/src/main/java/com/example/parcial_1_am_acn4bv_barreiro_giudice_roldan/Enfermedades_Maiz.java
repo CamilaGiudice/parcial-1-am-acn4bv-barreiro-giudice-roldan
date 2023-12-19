@@ -84,7 +84,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
         });
 
         btnAmain= findViewById (R.id.btnAmain);
-        btnAuva= findViewById (R.id.btnAuva);
+        btnAuva = findViewById(R.id.btnAuva);
 
         btnAmain.setOnClickListener (new View.OnClickListener () {
             @Override
