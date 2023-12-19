@@ -31,7 +31,6 @@ public class Enfermedades_Maiz extends AppCompatActivity {
         nitrogeno=findViewById (R.id.btnNitrogeno);
         roya= findViewById (R.id.btnRoya);
         panojaloca=findViewById(R.id.btnpanojaloca);
-
         cuarto.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View v) {
