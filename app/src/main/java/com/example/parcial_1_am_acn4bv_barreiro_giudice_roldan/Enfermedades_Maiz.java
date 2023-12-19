@@ -48,6 +48,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
             }
         });
         carbon.setOnClickListener (new View.OnClickListener () {
+
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (Intent.ACTION_VIEW,
