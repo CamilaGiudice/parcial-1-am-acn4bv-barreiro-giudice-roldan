@@ -101,7 +101,7 @@ public class Enfermedades_Limon extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (getApplicationContext (), Enfermedades_Trigo.class);
-                startActivity (intent);
+                startActivity(intent);
             }
         });
 
