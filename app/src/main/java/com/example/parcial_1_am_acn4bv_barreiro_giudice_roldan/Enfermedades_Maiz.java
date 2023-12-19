@@ -52,7 +52,7 @@ public class Enfermedades_Maiz extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent (Intent.ACTION_VIEW,
                         Uri.parse("https://herbariofitopatologia.agro.uba.ar/?page_id=119"));
-                startActivity (intent);
+                startActivity(intent);
             }
         });
         blanca.setOnClickListener (new View.OnClickListener () {
